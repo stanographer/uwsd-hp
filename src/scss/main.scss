@@ -76,7 +76,11 @@ a {
 
 .logo {
   // font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+
+  @media (min-width: 991px) {
+    font-size: 1.3rem;
+  }
 }
 
 .playfair {
@@ -130,12 +134,19 @@ a {
   }
 }
 
-// #topnav {
-//   @media (min-width: 991px) {
-//     background-color: transparent;
-//     box-shadow: unset;
-//   }
-// }
+#topnav {
+  @media (max-width: 991px) {
+    background-color: #f2f2f2 !important;
+  }
+}
+
+#topnav .navbar-toggle .lines {
+  width: .9rem;
+}
+
+#topnav .navbar-toggle span {
+  margin-bottom: .2rem;
+}
 
 #topnav.nav-sticky {
   background-color: rgb(242, 242, 242);
