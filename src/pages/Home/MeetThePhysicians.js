@@ -43,7 +43,7 @@ class MeetThePhysicians extends Component {
             <Row className="align-items-center">
               <Col lg="5" md="6">
                 <img
-                  data-src={docs}
+                  src={docs}
                   alt="UWSD Staff"
                   className="rounded img-fluid mx-auto d-block preview lazy"
                 />
