@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 //Import Components
 import SectionTitle from "../../components/Shared/section-title";
 import SectionTitleLeft from "../../components/Shared/section-title-left";
-import ProgressiveImage from "progressive-image";
 
 // Import images
 import docs from "../../images/team/docs.jpg";
@@ -36,25 +35,18 @@ class MeetThePhysicians extends Component {
         <section className="section bg-light">
           <Container>
             <span className="show-on-mobile">
-              <SectionTitle isLeft={true} title="Meet the Staff" />
+              <SectionTitle
+                isLeft={true}
+                title="Meet the Staff"
+              />
             </span>
             <Row className="align-items-center">
               <Col lg="5" md="6">
-                <ProgressiveImage src={docs} placeholder={docs}>
-                  {(src) => {
-                    return (
-                      <div>
-                        <img className="progressive-image" src={src} />
-                        <noscript>
-                          <img
-                            className="progressive-image no-script"
-                            src={docs}
-                          />
-                        </noscript>
-                      </div>
-                    );
-                  }}
-                </ProgressiveImage>
+                <img
+                  data-src={docs}
+                  alt="UWSD Staff"
+                  className="rounded img-fluid mx-auto d-block preview lazy"
+                />
               </Col>
               <Col lg="7" md="6" className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                 <div className="section-title ml-lg-5">
@@ -74,10 +66,7 @@ class MeetThePhysicians extends Component {
                     />
                   </span>
                   <div className="center-on-mobile">
-                    <Link
-                      to="/physicians"
-                      className="mt-4 text-primary center-on-mobile"
-                    >
+                    <Link to="/physicians" className="mt-4 text-primary center-on-mobile">
                       Find Out More <i className="mdi mdi-chevron-right"></i>
                     </Link>
                   </div>
