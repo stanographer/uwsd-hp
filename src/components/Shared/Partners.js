@@ -15,14 +15,33 @@ class Partners extends Component {
       <React.Fragment>
         <Row id="partners">
           <Col id="partner1" lg="2" md="2" xs="4" className="text-center">
-            <img src={img1} className="avatar avatar-small" alt="" />
+            <a
+              href="https://www.aad.org/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                src={img1}
+                className="avatar avatar-small"
+                alt="American Association of Dermatology"
+              />
+            </a>
           </Col>
-          <Col id="partner2"
+          <Col
+            id="partner2"
             lg="2"
             md="2"
             xs="4"
-            className="text-center mt-0 mt-sm-4" className="text-center">
-            <img src={img2} className="avatar avatar-small" alt="" />
+            className="text-center mt-0 mt-sm-4"
+            className="text-center"
+          >
+            <a
+              href="https://www.aslms.org/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img src={img2} className="avatar avatar-small" alt="ASLMS" />
+            </a>
           </Col>
           <Col
             id="partner3"
@@ -31,7 +50,17 @@ class Partners extends Component {
             xs="4"
             className="text-center mt-4 mt-sm-0"
           >
-            <img src={img3} className="avatar avatar-small" alt="" />
+            <a
+              href="https://www.mohscollege.org/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                src={img3}
+                className="avatar avatar-small"
+                alt="American College of Mohs Surgery: ACMS"
+              />
+            </a>
           </Col>
           <Col
             id="partner4"
@@ -40,7 +69,17 @@ class Partners extends Component {
             xs="4"
             className="text-center mt-4 mt-sm-0"
           >
-            <img src={img4} className="avatar avatar-small" alt="" />
+            <a
+              href="https://www.asds.net/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                src={img4}
+                className="avatar avatar-small"
+                alt="American Society for Dermatologic Surgery"
+              />
+            </a>
           </Col>
         </Row>
       </React.Fragment>

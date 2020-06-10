@@ -34,11 +34,10 @@ class Footer extends Component {
                   }
                   to="#"
                 >
-                  <span>Upper West Side Dermatology</span><span className="text-primary">.</span>
+                  <span className="playfair">Upper West Side Dermatology</span><span className="text-primary">.</span>
                 </Link>
                 <p className={this.props.isLight ? "mt-4 text-muted" : "mt-4"}>
-                  Start working with Landrick that can provide everything you
-                  need to generate awareness, drive traffic, connect.
+                  Find us on social media:
                 </p>
                 <ul className="list-unstyled social-icon social mb-0 mt-4">
                   <li className="list-inline-item mr-1">

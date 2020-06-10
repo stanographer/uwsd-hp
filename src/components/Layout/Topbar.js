@@ -12,40 +12,6 @@ class Topbar extends Component {
         { id: 1, title: "Home", link: "/index" },
         {
           id: 2,
-          title: "Our Practice",
-          link: "/#",
-          isMegaMenu: true,
-          isOpenSubMenu: false,
-          child: [
-            {
-              title: "Physicians",
-              link: "/physicians",
-              description: "Learn about our highly qualified physicians.",
-            },
-            {
-              title: "Patient Information",
-              link: "/patient-information",
-              description: "How to get started.",
-            },
-            {
-              title: "Insurances",
-              link: "/insurances",
-              description: "We accept a variety of insurances.",
-            },
-            {
-              title: "New Patient Forms",
-              link: "/new-patient-forms",
-              description: "Download intake forms here.",
-            },
-            {
-              title: "Location & Hours",
-              link: "/location-and-hours",
-              description: "Email, call, or visit us.",
-            },
-          ],
-        },
-        {
-          id: 3,
           title: "Surgical",
           link: "/#",
           isOpenSubMenu: false,
@@ -112,7 +78,7 @@ class Topbar extends Component {
           ],
         },
         {
-          id: 4,
+          id: 3,
           title: "Cosmetic",
           link: "/#",
           isOpenSubMenu: false,
@@ -190,8 +156,42 @@ class Topbar extends Component {
             },
           ],
         },
+        {
+          id: 4,
+          title: "Our Practice",
+          link: "/#",
+          isOpenSubMenu: false,
+          child: [
+            {
+              title: "Physicians",
+              link: "/physicians",
+              description: "Learn about our highly qualified physicians.",
+            },
+            {
+              title: "Patient Information",
+              link: "/patient-information",
+              description: "How to get started.",
+            },
+            {
+              title: "Insurances",
+              link: "/insurances",
+              description: "We accept a variety of insurances.",
+            },
+            {
+              title: "New Patient Forms",
+              link: "/new-patient-forms",
+              description: "Download intake forms here.",
+            },
+            {
+              title: "Location & Hours",
+              link: "/location-and-hours",
+              description: "Email, call, or visit us.",
+            },
+          ],
+        },
       ],
     };
+    
     this.toggleLine = this.toggleLine.bind(this);
     this.openBlock.bind(this);
     this.openNestedBlock.bind(this);
@@ -268,10 +268,10 @@ class Topbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <header id="topnav" className="defaultscroll sticky">
+        <header id="topnav" className="defaultscroll sticky nav-sticky">
           <Container>
             <div>
-              <Link className="logo show-on-desktop playfair" to="/index">
+              <Link className="logo show-on-desktop" to="/index">
                 Upper West Side Dermatology
                 <span className="text-primary">.</span>
               </Link>

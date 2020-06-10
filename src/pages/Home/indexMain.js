@@ -31,9 +31,10 @@ class IndexMain extends Component {
     var doc = document.documentElement;
     var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
     if (top > 80) {
-      document.getElementById("topnav").classList.add("nav-sticky");
+      setTimeout(() => document.getElementById("topnav").classList.add("nav-sticky"), 100)
+      
     } else {
-      document.getElementById("topnav").classList.remove("nav-sticky");
+      setTimeout(() => document.getElementById("topnav").classList.remove("nav-sticky"), 100) 
     }
   };
 

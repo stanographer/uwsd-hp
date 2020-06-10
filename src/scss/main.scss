@@ -130,12 +130,12 @@ a {
   }
 }
 
-#topnav {
-  @media (max-width: 991px) {
-    background-color: $light-gray;
-    box-shadow: unset;
-  }
-}
+// #topnav {
+//   @media (min-width: 991px) {
+//     background-color: transparent;
+//     box-shadow: unset;
+//   }
+// }
 
 #topnav.nav-sticky {
   background-color: rgb(242, 242, 242);
@@ -143,4 +143,20 @@ a {
 
 #topnav .navigation-menu > li:hover > a, #topnav .navigation-menu > li.active > a {
   color: $dark-purple !important;
+}
+
+#topnav .navigation-menu .has-submenu .menu-arrow {
+  @media (max-width: 768) {
+    right: 16px;
+    top: 16px;
+  };
+}
+
+#topnav .has-submenu.active.active .menu-arrow {
+  border-color: $dark-purple !important;
+}
+
+.alert-primary, .pagination li a:hover, ::selection {
+  background-color: $dark-purple !important;
+  border-color: $dark-purple !important;
 }
