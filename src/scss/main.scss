@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+$dark-purple: #663e62;
+$darker-purple: #452d42;
+$light-gray: rgb(242, 242, 242);
+$light-pink: #e3cae0;
+
+a {
+  color: $darker-purple;
+}
+
+.avatar.avatar-small {
+  height: 3rem;
+  width: unset;
+}
+
+.bg-home {
+  height: 103vh;
+
+  @media (max-width: 767px) {
+    height: 103vh;
+  }
+}
+
+.btn-outline-primary {
+  &:active {
+    background-color: $darker-purple !important;
+    border-color: $darker-purple !important;
+    box-shadow: 0 3px 5px 0 $light-pink;
+  }
+
+  &:hover {
+    background-color: $darker-purple !important;
+    border-color: $darker-purple !important;
+    box-shadow: 0 3px 5px 0 $light-pink;
+  }
+
+  border-color: $dark-purple;
+  color: $darker-purple !important;
+}
+
+.btn-primary {
+  &:active {
+    background-color: $darker-purple !important;
+    border-color: $darker-purple !important;
+  }
+
+  &:hover {
+    background-color: $darker-purple !important;
+    border-color: $darker-purple !important;
+  }
+
+  background-color: $dark-purple !important;
+  border: 1px solid $dark-purple !important;
+  box-shadow: 0 3px 5px 0 $light-pink;
+  color: #fff;
+}
+
+.center-on-mobile {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.container-filter li a.active, .container-filter li a:hover {
+  color: $darker-purple !important;
+  border-color: $darker-purple !important;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+}
+
+.logo {
+  // font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif !important;
+}
+
+.section-title .title {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.show-on-desktop {
+  display: none;
+
+  @media (min-width: 991px) {
+    display: block;
+  }
+}
+
+.show-on-mobile {
+  display: block;
+
+  @media (min-width: 991px) {
+    display: none;
+  }
+}
+
+.text-muted {
+  color: #5f6670 !important;
+}
+
+.text-primary {
+  color: $dark-purple !important;
+}
+
+#navigation {
+  @media (max-width: 991px) {
+    background-color: $light-gray;
+    box-shadow: unset;
+  }
+}
+
+#partners {
+  justify-content: space-evenly !important;
+
+  @media (max-width: 991px) {
+    justify-content: center !important;
+  }
+}
+
+#topnav {
+  @media (max-width: 991px) {
+    background-color: $light-gray;
+    box-shadow: unset;
+  }
+}
+
+#topnav.nav-sticky {
+  background-color: rgb(242, 242, 242);
+}
+
+#topnav .navigation-menu > li:hover > a, #topnav .navigation-menu > li.active > a {
+  color: $dark-purple !important;
+}
