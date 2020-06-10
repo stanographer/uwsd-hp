@@ -271,7 +271,7 @@ class Topbar extends Component {
         <header id="topnav" className="defaultscroll sticky">
           <Container>
             <div>
-              <Link className="logo show-on-desktop" to="/index">
+              <Link className="logo show-on-desktop playfair" to="/index">
                 Upper West Side Dermatology
                 <span className="text-primary">.</span>
               </Link>
@@ -433,11 +433,6 @@ class Topbar extends Component {
                   )
                 )}
               </ul>
-              <div className="buy-menu-btn d-none">
-                <Link to="#" target="_blank" className="btn btn-primary">
-                  Buy Now
-                </Link>
-              </div>
             </div>
           </Container>
         </header>
