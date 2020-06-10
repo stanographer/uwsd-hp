@@ -27,13 +27,13 @@ class Section extends Component {
                   </h1>
                   <div className="mt-4 pt-2">
                     <Link
-                      to="documentation"
+                      to="schedule-appointment"
                       className="btn btn-outline-primary mt-2 mr-1"
                     >
                       Schedule Appointment
                     </Link>
                     <Link
-                      to="documentation"
+                      to="registration-form"
                       className="btn btn-primary mt-2 ml-1"
                     >
                        Registration Form
