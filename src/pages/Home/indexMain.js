@@ -82,7 +82,7 @@ class IndexMain extends Component {
             >
               <path
                 d="M720 125L2160 0H2880V250H0V125H720Z"
-                fill="currentColor"
+                fill="#452d42"
               ></path>
             </svg>
           </div>
@@ -97,7 +97,7 @@ class IndexMain extends Component {
             >
               <path
                 d="M720 125L2160 0H2880V250H0V125H720Z"
-                fill="currentColor"
+                fill="#452d42"
               ></path>
             </svg>
           </div>

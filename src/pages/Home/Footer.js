@@ -16,7 +16,7 @@ class Footer extends Component {
             <Row className="justify-content-center">
               <Col md={6}>
                 <div className="copy-rights text-center">
-                  <p className="mb-0">
+                  <p className="mb-0 text-small">
                     © {new Date().getFullYear()}-{new Date().getFullYear() + 1}{" "}
                     Upper West Side Dermatology.
                   </p>

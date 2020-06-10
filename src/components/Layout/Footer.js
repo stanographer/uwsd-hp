@@ -37,7 +37,7 @@ class Footer extends Component {
                   <span className="playfair">Upper West Side Dermatology</span><span className="text-primary">.</span>
                 </Link>
                 <p className={this.props.isLight ? "mt-4 text-muted" : "mt-4"}>
-                  Find us on social media:
+                  Find us on social media.
                 </p>
                 <ul className="list-unstyled social-icon social mb-0 mt-4">
                   <li className="list-inline-item mr-1">
