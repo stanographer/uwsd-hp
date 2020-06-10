@@ -6,18 +6,10 @@ import { Link } from "react-router-dom";
 
 //Import Components
 import SectionTitle from "../../components/Shared/section-title";
-import KeyFeatureBox from "../../components/Shared/key-feature-box";
-import SectionTitleLeft from "../../components/Shared/section-title-left";
-import ReviewsSlider from "../../components/Shared/reviews-slider";
 
 // Import images
-import staff from "../../images/team/staff.jpg";
-import img1 from "../../images/client/01.jpg";
-import img2 from "../../images/client/02.jpg";
-import img3 from "../../images/client/03.jpg";
-import img4 from "../../images/client/04.jpg";
-import img5 from "../../images/client/05.jpg";
-import img6 from "../../images/client/06.jpg";
+import staff from "../../images/team/staff2.jpg";
+
 
 class MeetThePhysicians extends Component {
   sendMail() {
