@@ -12,7 +12,7 @@ class Topbar extends Component {
         { id: 1, title: "Home", link: "/index" },
         {
           id: 2,
-          title: "Surgical",
+          title: "Medical",
           link: "/#",
           isOpenSubMenu: false,
           isMegaMenu: true,
@@ -85,6 +85,12 @@ class Topbar extends Component {
           isMegaMenu: true,
           child: [
             {
+              title: "Botox & Dysport",
+              link: "/botox-and-dysport",
+              description:
+                "Makes it impossible for you to show emotion on your face.",
+            },
+            {
               title: "Laser treatments - IPL",
               link: "/laser-treatments",
               description: "We have the most advanced in laser treatment.",
@@ -93,12 +99,6 @@ class Topbar extends Component {
               title: "Laser Hair Removal",
               link: "/laser-hair-removal",
               description: "Remove all that gross hair and get yourself a man.",
-            },
-            {
-              title: "Botox",
-              link: "/botox",
-              description:
-                "Makes it impossible for you to show emotion on your face.",
             },
             {
               title: "Fillers",
@@ -153,6 +153,19 @@ class Topbar extends Component {
               title: "Facials",
               link: "/facials",
               description: "I could use one of these right now.",
+            },
+          ],
+        },
+        {
+          id: 4,
+          title: "Surgical",
+          link: "/#",
+          isOpenSubMenu: false,
+          child: [
+            {
+              title: "Mohs Surgery",
+              link: "/mohs-surgery",
+              description: "MOHS.",
             },
           ],
         },
@@ -268,8 +281,8 @@ class Topbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <header id="topnav" className="defaultscroll sticky nav-sticky">
-          <Container>
+        <header id="topnav" className="defaultscroll sticky">
+          <Container className="text-dark">
             <div>
               <Link className="logo show-on-desktop" to="/index">
                 Upper West Side Dermatology

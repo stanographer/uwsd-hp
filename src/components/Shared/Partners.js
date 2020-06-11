@@ -6,8 +6,6 @@ import img1 from "../../images/badges/aad.png";
 import img2 from "../../images/badges/aslms.jpg";
 import img3 from "../../images/badges/acms.jpg";
 import img4 from "../../images/badges/asds.jpg";
-import img5 from "../../images/badges/castle-connolly-travis.jpg";
-import img6 from "../../images/badges/castle-connolly-connelley.jpg";
 
 class Partners extends Component {
   render() {

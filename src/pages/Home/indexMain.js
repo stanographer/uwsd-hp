@@ -1,6 +1,7 @@
 // React Basic and Bootstrap
 import React, { Component } from "react";
 import { Container } from "reactstrap";
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 // Import Generic Components
 import Location from "./Location";
@@ -31,10 +32,15 @@ class IndexMain extends Component {
     var doc = document.documentElement;
     var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
     if (top > 80) {
-      setTimeout(() => document.getElementById("topnav").classList.add("nav-sticky"), 100)
-      
+      setTimeout(
+        () => document.getElementById("topnav").classList.add("nav-sticky"),
+        100
+      );
     } else {
-      setTimeout(() => document.getElementById("topnav").classList.remove("nav-sticky"), 100) 
+      setTimeout(
+        () => document.getElementById("topnav").classList.remove("nav-sticky"),
+        100
+      );
     }
   };
 
@@ -69,9 +75,10 @@ class IndexMain extends Component {
         <Procedures />
 
         <Location />
-
-        {/* Testi */}
-        <Testi />
+        <LazyLoadComponent>
+          {/* Testi */}
+          <Testi />
+        </LazyLoadComponent>
 
         <div className="position-relative">
           <div className="shape overflow-hidden text-light">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
 
 $dark-purple: #663e62;
 $darker-purple: #452d42;
@@ -64,9 +64,18 @@ a {
   }
 }
 
-.container-filter li a.active, .container-filter li a:hover {
+.container-filter li a.active,
+.container-filter li a:hover {
   color: $darker-purple !important;
   border-color: $darker-purple !important;
+}
+
+.dark-purple {
+  color: $dark-purple;
+}
+
+.darker-purple {
+  color: $darker-purple;
 }
 
 .footer {
@@ -74,21 +83,39 @@ a {
 }
 
 .heading {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2em;
 }
 
 .logo {
-  // font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
+  line-height: unset;
+  padding-bottom: .8rem;
+  padding-top: .9rem;
 
   @media (min-width: 991px) {
     font-size: 1.3rem;
+    line-height: unset;
+    padding: .9rem;
   }
 }
 
+.menu-arrow {
+  @media (min-width: 991px) {
+    top: 1.5rem;
+  }
+
+  top: 1.5rem;
+}
+
+.page-next-level .title {
+  color: #161c2d;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+}
+
 .playfair {
-  font-family: 'Playfair Display', serif !important;
+  font-family: "Playfair Display", serif !important;
 }
 
 .section-title .title {
@@ -124,6 +151,8 @@ a {
 }
 
 #navigation {
+  top: 3.2rem;
+
   @media (max-width: 991px) {
     background-color: $light-gray;
     box-shadow: unset;
@@ -141,37 +170,54 @@ a {
 #topnav {
   @media (max-width: 991px) {
     background-color: #f2f2f2 !important;
+    min-height: unset;
+    max-height: 3.4rem;
   }
 }
 
 #topnav .navbar-toggle .lines {
-  width: .9rem;
+  margin: 1.3rem 1rem;
+  width: 0.9rem;
 }
 
 #topnav .navbar-toggle span {
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
 #topnav.nav-sticky {
   background-color: rgb(242, 242, 242);
 }
 
-#topnav .navigation-menu > li:hover > a, #topnav .navigation-menu > li.active > a {
+#topnav .navigation-menu > li:hover > a,
+#topnav .navigation-menu > li.active > a {
   color: $dark-purple !important;
 }
 
+#topnav .navigation-menu > li > a {
+  @media (min-width: 992px) {
+    padding-bottom: 1rem;
+    padding-top: 1.2rem;
+    min-height: .5rem;
+  }
+}
+
 #topnav .navigation-menu .has-submenu .menu-arrow {
-  @media (max-width: 768) {
-    right: 16px;
-    top: 16px;
-  };
+  right: 16px;
+  top: 24px;
+
+  @media (min-width: 768px) {
+    right: 0;
+    top: 1.5rem;
+  }
 }
 
 #topnav .has-submenu.active.active .menu-arrow {
   border-color: $dark-purple !important;
 }
 
-.alert-primary, .pagination li a:hover, ::selection {
+.alert-primary,
+.pagination li a:hover,
+::selection {
   background-color: $dark-purple !important;
   border-color: $dark-purple !important;
 }

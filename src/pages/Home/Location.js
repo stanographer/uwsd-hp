@@ -3,13 +3,32 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 //Import Components
 import SectionTitle from "../../components/Shared/section-title";
 
 // Import images
 import staff from "../../images/team/staff2.jpg";
+import staffTiny from "../../images/team/staff2_tiny.jpg";
 
+const LazyImage = ({ image, scrollPosition }) => (
+  <LazyLoadImage
+    alt={image.alt}
+    delayTime={1000}
+    effect="blur"
+    scrollPosition={scrollPosition}
+    height={image.height}
+    src={image.src} // use normal <img> attributes as props
+    width={image.width}
+    className={image.className}
+    placeholderSrc={image.placeholderSrc}
+  />
+);
 
 class MeetThePhysicians extends Component {
   sendMail() {
@@ -51,15 +70,18 @@ class MeetThePhysicians extends Component {
             />
             <Row>
               <Col lg="8" md="6">
-                <img
-                    src={staff}
-                    alt="UWSD Staff"
-                    className="rounded img-fluid mx-auto d-block"
+                <LazyImage
+                  image={{
+                    src: staff,
+                    alt: "UWSD Reception Staff",
+                    height: "100%",
+                    className: "rounded img-fluid mx-auto d-block",
+                    placeholderSrc: staffTiny,
+                  }}
                 />
               </Col>
               <Col lg="4" md="6" className="mt-4 pt-2">
                 <div className="title-heading ml-lg-4">
-
                   <div className="contact-detail mt-3 mb-3">
                     <div className="icon mt-3 float-left">
                       <i className="mdi mdi-map-marker-outline text-muted mdi-36px mr-3"></i>
@@ -143,4 +165,4 @@ class MeetThePhysicians extends Component {
   }
 }
 
-export default MeetThePhysicians;
+export default trackWindowScroll(MeetThePhysicians);

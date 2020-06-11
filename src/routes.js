@@ -2,6 +2,9 @@ import React from 'react';
 
 // Root Include
 const Root = React.lazy(() => import('./pages/Home/indexMain'));
+const BotoxAndDysport = React.lazy(() => import('./pages/Home/Services/BotoxAndDysport'));
+const Acne = React.lazy(() => import('./pages/Home/Services/Acne'));
+const SkinCancerScreening = React.lazy(() => import('./pages/Home/Services/SkinCancerScreening'))
 const PageContactDetail = React.lazy(() => import('./pages/Pages/Contact/PageContactDetail'));
 
 //Special
@@ -91,6 +94,9 @@ const PageContactTwo = React.lazy(() => import('./pages/Pages/Contact/PageContac
 
 const routes = [
     //routes without Layout
+    { path: '/botox-and-dysport', component: BotoxAndDysport },
+    { path: '/acne', component: Acne },
+    { path: '/skin-cancer-screening', component: SkinCancerScreening },
 
     //Contct withour layout
     { path: '/page-contact-detail', component: PageContactDetail, isWithoutLayout : true },
@@ -184,7 +190,6 @@ const routes = [
 
     //Root
     { path: '/', component: Root }
-
 ];
 
 export default routes;
