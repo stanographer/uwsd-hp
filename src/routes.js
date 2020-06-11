@@ -2,10 +2,15 @@ import React from 'react';
 
 // Root Include
 const Root = React.lazy(() => import('./pages/Home/indexMain'));
+
+// Conditions and procedures
 const BotoxAndDysport = React.lazy(() => import('./pages/Home/Services/BotoxAndDysport'));
 const Acne = React.lazy(() => import('./pages/Home/Services/Acne'));
 const SkinCancerScreening = React.lazy(() => import('./pages/Home/Services/SkinCancerScreening'))
 const PageContactDetail = React.lazy(() => import('./pages/Pages/Contact/PageContactDetail'));
+
+// Physicians
+const Physicians = React.lazy(() => import('./pages/Home/Physicians/Physicians'));
 
 //Special
 const PageComingSoon = React.lazy(() => import('./pages/Pages/Special/PageComingSoon'));
@@ -97,6 +102,9 @@ const routes = [
     { path: '/botox-and-dysport', component: BotoxAndDysport },
     { path: '/acne', component: Acne },
     { path: '/skin-cancer-screening', component: SkinCancerScreening },
+
+    // Physicians
+    { path: '/physicians', component: Physicians },
 
     //Contct withour layout
     { path: '/page-contact-detail', component: PageContactDetail, isWithoutLayout : true },
