@@ -2,9 +2,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
-import {
-  LazyLoadImage
-} from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 // Import Components
@@ -71,6 +69,7 @@ class Index extends Component {
           title={title}
           pathItems={pathItems}
         />
+        {/* curve  */}
         <section className="section">
           <Container>
             <Row>
@@ -111,7 +110,10 @@ class Index extends Component {
                   <h4 className="question darker-purple">{treatment.title}</h4>
                   <p className="answer text-muted ml-lg-4 pl-lg-3 mb-3 mt-4">
                     <p className="dark-purple">
-                      <em>What {treatment.plural ? 'are' : 'is'} {treatment.title}?</em>
+                      <em>
+                        What {treatment.plural ? "are" : "is"} {treatment.title}
+                        ?
+                      </em>
                     </p>
                     {treatment.description}
                   </p>

@@ -21,18 +21,23 @@ class PageBreadcrumb extends Component {
               style={Object.assign(style, {
                 backgroundImage: `url(${src})`,
                 backgroundPosition: bgPositioning || `center bottom`,
-                backgroundSize: `cover`
+                backgroundSize: `cover`,
               })}
             >
-                <div className="bg-overlay bg-overlay-white" />
+              <div className="bg-overlay bg-overlay-white" />
               <Container>
                 <Row className="justify-content-center">
                   <Col lg="12" className="text-center">
                     <div className="page-next-level">
                       {this.props.title ? (
-                        <h2 className="title">{this.props.title}<span className="text-primary">.</span></h2>
+                        <h2 className="title">
+                          {this.props.title}
+                          <span className="text-primary">.</span>
+                        </h2>
                       ) : null}
+                      
                       {this.props.children ? this.props.children : null}
+                      
                       <ul className="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
                         {this.props.pathItems.map((item, key) =>
                           item.id !== length ? (

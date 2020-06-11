@@ -170,7 +170,7 @@ class Topbar extends Component {
           ],
         },
         {
-          id: 4,
+          id: 5,
           title: "Our Practice",
           link: "/#",
           isOpenSubMenu: false,
@@ -211,6 +211,8 @@ class Topbar extends Component {
   }
 
   toggleLine() {
+    let body  = document.querySelector("body");
+    body.classList.toggle("no-scroll");
     this.setState((prevState) => ({ isOpen: !prevState.isOpen }));
   }
 

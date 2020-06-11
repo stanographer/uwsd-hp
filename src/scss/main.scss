@@ -90,13 +90,13 @@ a {
 .logo {
   font-size: 1.2rem;
   line-height: unset;
-  padding-bottom: .8rem;
-  padding-top: .9rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.9rem;
 
   @media (min-width: 991px) {
     font-size: 1.3rem;
     line-height: unset;
-    padding: .9rem;
+    padding: 0.9rem;
   }
 }
 
@@ -106,6 +106,10 @@ a {
   }
 
   top: 1.5rem;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .page-next-level .title {
@@ -123,6 +127,14 @@ a {
 
   @media (min-width: 768px) {
     text-align: left;
+  }
+}
+
+.shape {
+  bottom: -3px;
+
+  @media (min-width: 767px) {
+    bottom: -1px;
   }
 }
 
@@ -148,6 +160,14 @@ a {
 
 .text-primary {
   color: $dark-purple !important;
+}
+
+.title-heading .heading {
+  letter-spacing: unset;
+
+  @media (min-width: 768px) {
+    letter-spacing: 1px;
+  }
 }
 
 #navigation {
@@ -178,6 +198,10 @@ a {
 #topnav .navbar-toggle .lines {
   margin: 1.3rem 1rem;
   width: 0.9rem;
+
+  @media (max-width: 375px) {
+    margin-right: 0.6rem !important;
+  }
 }
 
 #topnav .navbar-toggle span {
@@ -197,7 +221,7 @@ a {
   @media (min-width: 992px) {
     padding-bottom: 1rem;
     padding-top: 1.2rem;
-    min-height: .5rem;
+    min-height: 0.5rem;
   }
 }
 
@@ -208,6 +232,12 @@ a {
   @media (min-width: 768px) {
     right: 0;
     top: 1.5rem;
+  }
+}
+
+#topnav #navigation {
+  @media (max-width: 991px) {
+    min-height: 100vh;
   }
 }
 
