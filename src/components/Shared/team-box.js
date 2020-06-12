@@ -1,6 +1,24 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Col } from "reactstrap";
+import {
+    LazyLoadImage,
+    trackWindowScroll,
+  } from "react-lazy-load-image-component";
+  import "react-lazy-load-image-component/src/effects/blur.css";
+
+  const LazyImage = ({ image, scrollPosition }) => (
+    <LazyLoadImage
+      alt={image.alt}
+      effect="blur"
+      scrollPosition={scrollPosition}
+      height={image.height}
+      src={image.src} // use normal <img> attributes as props
+      width={image.width}
+      className={image.className}
+      placeholderSrc={image.placeholderSrc}
+    />
+);
 
 class TeamBox extends Component {
   render() {
@@ -14,13 +32,23 @@ class TeamBox extends Component {
               id="teambox"
             >
               <div className="position-relative">
-                <img
-                  src={candidate.image}
-                  className="img-fluid avatar avatar-ex-large z-depth-1-half shadow"
-                  alt=""
+              <LazyImage
+                  image={{
+                    src: candidate.image,
+                    placeholderSrc: candidate.imageTiny,
+                    alt: candidate.name,
+                    height: "100%",
+                    className: "img-fluid avatar avatar-ex-large z-depth-1-half shadow"
+                  }}
                 />
                 <ul className="list-unstyled social-icon team-icon mb-0 mt-4">
-                  <li>Read more...</li>
+                  {candidate.socialIds.map((id, key) => (
+                    <li key={key} className="list-inline-item mr-1">
+                      <Link to={id.link} className="rounded">
+                        <i className={"mdi " + id.icon}></i>
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="content pt-3 pb-3">
@@ -41,4 +69,4 @@ class TeamBox extends Component {
   }
 }
 
-export default TeamBox;
+export default trackWindowScroll(TeamBox);

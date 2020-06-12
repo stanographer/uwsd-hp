@@ -16,6 +16,12 @@ import Asrani from "../../../images/team/avatars/falguni-asrani.jpg";
 import Yagerman from "../../../images/team/avatars/sarah-yagerman.jpg";
 import Donnelley from "../../../images/team/avatars/naomi-donnelley.jpg";
 import Arteaga from "../../../images/team/avatars/debbie-arteaga.jpg";
+import CossmanTiny from "../../../images/team/avatars/jack-cossman-tiny.jpg";
+import TravisTiny from "../../../images/team/avatars/lisa-travis-tiny.jpg";
+import AsraniTiny from "../../../images/team/avatars/falguni-asrani-tiny.jpg";
+import YagermanTiny from "../../../images/team/avatars/sarah-yagerman-tiny.jpg";
+import DonnelleyTiny from "../../../images/team/avatars/naomi-donnelley-tiny.jpg";
+import ArteagaTiny from "../../../images/team/avatars/debbie-arteaga-tiny.jpg";
 
 class PageTeam extends Component {
   constructor(props) {
@@ -31,82 +37,76 @@ class PageTeam extends Component {
         {
           id: 1,
           image: Travis,
+          imageTiny: TravisTiny,
           name: "Dr. Lisa Travis",
           designation: "Board-Certified Dermatologist",
           salary: "2300",
           link: "",
           socialIds: [
-            { icon: "mdi-facebook", link: "#" },
-            { icon: "mdi-instagram", link: "#" },
-            { icon: "mdi-twitter", link: "#" },
-            { icon: "mdi-google-plus", link: "#" },
+            { icon: "mdi-magnify", link: "#" },
+            { icon: "mdi-linkedin-box", link: "#" },
           ],
         },
         {
           id: 2,
           image: Cossman,
+          imageTiny: CossmanTiny,
           name: "Dr. Jack Cossman",
           designation: "Board-Certified Dermatologist",
           salary: "1950",
           link: "",
           socialIds: [
-            { icon: "mdi-facebook", link: "#" },
-            { icon: "mdi-instagram", link: "#" },
-            { icon: "mdi-twitter", link: "#" },
-            { icon: "mdi-google-plus", link: "#" },
+            { icon: "mdi-magnify", link: "#" },,
+            { icon: "mdi-linkedin-box", link: "#" },
           ],
         },
         {
           id: 3,
           image: Asrani,
+          imageTiny: AsraniTiny,
           name: "Dr. Falguni Asrani",
           designation: "Board-Certified Dermatologist",
           salary: "2540",
           link: "",
           socialIds: [
-            { icon: "mdi-facebook", link: "#" },
-            { icon: "mdi-instagram", link: "#" },
-            { icon: "mdi-twitter", link: "#" },
-            { icon: "mdi-google-plus", link: "#" },
+            { icon: "mdi-magnify", link: "#" },
+            { icon: "mdi-linkedin-box", link: "#" },
           ],
         },
         {
           id: 4,
           image: Donnelley,
+          imageTiny: DonnelleyTiny,
           name: "Dr. Naomi Donnelley",
           designation: "Board-Certified Dermatologist",
           link: "",
           socialIds: [
-            { icon: "mdi-facebook", link: "#" },
-            { icon: "mdi-instagram", link: "#" },
-            { icon: "mdi-twitter", link: "#" },
-            { icon: "mdi-google-plus", link: "#" },
+            { icon: "mdi-magnify", link: "#" },,
+            { icon: "mdi-linkedin-box", link: "#" },
           ],
         },
         {
           id: 5,
           image: Yagerman,
+          imageTiny: YagermanTiny,
           name: "Dr. Sarah Yagerman",
           designation: "Board-Certified Dermatologist",
           link: "",
           socialIds: [
-            { icon: "mdi-facebook", link: "#" },
-            { icon: "mdi-instagram", link: "#" },
-            { icon: "mdi-twitter", link: "#" },
-            { icon: "mdi-google-plus", link: "#" },
+            { icon: "mdi-magnify", link: "#" },,
+            { icon: "mdi-linkedin-box", link: "#" },
           ],
         },
         {
           id: 6,
           image: Arteaga,
+          imageTiny: ArteagaTiny,
           name: "Debbie Arteaga",
           designation: "Medical and Cosmetic Aesthetician",
           link: "",
           socialIds: [
-            { icon: "mdi-facebook", link: "#" },
-            { icon: "mdi-instagram", link: "#" },
-            { icon: "mdi-twitter", link: "#" },
-            { icon: "mdi-google-plus", link: "#" },
+            { icon: "mdi-magnify", link: "#" },
+            { icon: "mdi-linkedin-box", link: "#" },
           ],
         },
       ],
