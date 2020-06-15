@@ -39,7 +39,7 @@ class TeamBox extends Component {
                       alt: candidate.name,
                       height: "100%",
                       className:
-                        "img-fluid avatar avatar-ex-large rounded-pill",
+                        "img-fluid avatar avatar-ex-large rounded-pill z-depth-1-half",
                     }}
                   />
                 </div>
