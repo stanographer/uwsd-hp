@@ -36,11 +36,10 @@ class TeamBox extends Component {
                   <LazyImage
                     image={{
                       src: candidate.image,
-                      placeholderSrc: candidate.imageTiny,
                       alt: candidate.name,
                       height: "100%",
                       className:
-                        "img-fluid avatar avatar-ex-large rounded-pill z-depth-1-half shadow",
+                        "img-fluid avatar avatar-ex-large rounded-pill",
                     }}
                   />
                 </div>
