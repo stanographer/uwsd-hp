@@ -204,19 +204,21 @@ class Topbar extends Component {
         },
       ],
     };
-    
+
     this.toggleLine = this.toggleLine.bind(this);
     this.openBlock.bind(this);
     this.openNestedBlock.bind(this);
   }
 
   toggleLine() {
-    let body  = document.querySelector("body");
+    let body = document.querySelector("body");
     body.classList.toggle("no-scroll");
     this.setState((prevState) => ({ isOpen: !prevState.isOpen }));
   }
 
   componentDidMount() {
+    let body = document.querySelector("body");
+    body.classList.remove("no-scroll");
     var matchingMenuItem = null;
     var ul = document.getElementById("top-menu");
     var items = ul.getElementsByTagName("a");

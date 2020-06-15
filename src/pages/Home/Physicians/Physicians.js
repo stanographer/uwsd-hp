@@ -90,7 +90,7 @@ class PageTeam extends Component {
           image: Yagerman,
           imageTiny: YagermanTiny,
           name: "Dr. Sarah Yagerman",
-          designation: "Board-Certified Dermatologist",
+          designation: "Mohs Surgeon",
           link: "",
           socialIds: [
             { icon: "mdi-magnify", link: "#" },,
