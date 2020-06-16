@@ -70,8 +70,8 @@ class Travis extends React.Component {
       ),
       pathItems: [
         { id: 1, name: "Home", link: "/index" },
-        { id: 2, name: "Our Practice", link: "#" },
-        { id: 3, name: "Physicians", link: "/physicians" },
+        { id: 2, name: "Our Practice", link: "/our-practice" },
+        { id: 3, name: "Physicians", link: "/our-practice" },
         { id: 4, name: "Dr. Lisa Travis", link: "/lisa-travis" },
       ],
     };
