@@ -260,7 +260,7 @@ class OurPractice extends Component {
                       <p>
                         Most major credit cards are accepted. It is mandatory
                         that we keep a credit card on file due to high
-                        deductibles and co-insurance. Your will be notified in
+                        deductibles and co-insurance. You will be notified in
                         advance if the card on file will be charged.
                       </p>
                       {this.state.paymentMethods.map((paymentMethod, key) => (
@@ -305,7 +305,7 @@ class OurPractice extends Component {
                 </a>
               }
             />
-            <Row>
+            <Row className="mt-4">
               <Col lg="4" md="4">
                 <div className="map map-height-two rounded map-gray">
                   <iframe

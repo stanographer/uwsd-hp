@@ -36,17 +36,11 @@ class Section extends Component {
                       </h1>
                       <div className="mt-4 pt-2">
                         <Link
-                          to="schedule-appointment"
-                          className="btn btn-outline-primary mt-2 mr-1"
-                        >
-                          Schedule Appointment
-                        </Link>
-                        <a
-                          href="/new-patient.pdf"
+                          to="/our-practice"
                           className="btn btn-primary mt-2 mr-1"
                         >
-                          New Patient Form
-                        </a>
+                          Learn More
+                        </Link>
                       </div>
                     </div>
                   </Col>
