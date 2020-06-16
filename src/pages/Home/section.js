@@ -41,12 +41,12 @@ class Section extends Component {
                         >
                           Schedule Appointment
                         </Link>
-                        <Link
-                          to="registration-form"
-                          className="btn btn-primary mt-2 ml-1"
+                        <a
+                          href="/new-patient.pdf"
+                          className="btn btn-primary mt-2 mr-1"
                         >
-                          Registration Form
-                        </Link>
+                          New Patient Form
+                        </a>
                       </div>
                     </div>
                   </Col>

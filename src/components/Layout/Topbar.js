@@ -9,7 +9,6 @@ class Topbar extends Component {
     this.state = {
       isOpen: false,
       navLinks: [
-        { id: 1, title: "Home", link: "/index" },
         {
           id: 2,
           title: "Medical",
@@ -172,35 +171,7 @@ class Topbar extends Component {
         {
           id: 5,
           title: "Our Practice",
-          link: "/#",
-          isOpenSubMenu: false,
-          child: [
-            {
-              title: "Physicians",
-              link: "/physicians",
-              description: "Learn about our highly qualified physicians.",
-            },
-            {
-              title: "Patient Information",
-              link: "/patient-information",
-              description: "How to get started.",
-            },
-            {
-              title: "Insurances",
-              link: "/insurances",
-              description: "We accept a variety of insurances.",
-            },
-            {
-              title: "New Patient Forms",
-              link: "/new-patient-forms",
-              description: "Download intake forms here.",
-            },
-            {
-              title: "Location & Hours",
-              link: "/location-and-hours",
-              description: "Email, call, or visit us.",
-            },
-          ],
+          link: "/our-practice",
         },
       ],
     };
