@@ -23,6 +23,18 @@ import AsraniTiny from "../../../images/team/avatars/falguni-asrani-tiny.jpg";
 import YagermanTiny from "../../../images/team/avatars/sarah-yagerman-tiny.jpg";
 import DonnelleyTiny from "../../../images/team/avatars/naomi-donnelley-tiny.jpg";
 import ArteagaTiny from "../../../images/team/avatars/debbie-arteaga-tiny.jpg";
+import Soriano from "../../../images/team/avatars/jeanette-soriano.jpg";
+import SorianoTiny from "../../../images/team/avatars/jeanette-soriano-tiny.jpg";
+import Bauer from "../../../images/team/avatars/katie-bauer.jpg";
+import BauerTiny from "../../../images/team/avatars/katie-bauer-tiny.jpg";
+import Delfino from "../../../images/team/avatars/melissa-delfino.jpg";
+import DelfinoTiny from "../../../images/team/avatars/melissa-delfino-tiny.jpg";
+import Abid from "../../../images/team/avatars/ammara-abid.jpg";
+import AbidTiny from "../../../images/team/avatars/ammara-abid-tiny.jpg";
+import Lauter from "../../../images/team/avatars/mia-lauter.jpg";
+import LauterTiny from "../../../images/team/avatars/mia-lauter-tiny.jpg";
+import Ouyang from "../../../images/team/avatars/janie-ouyang.jpg";
+import OuyangTiny from "../../../images/team/avatars/janie-ouyang-tiny.jpg";
 import discover from "../../../images/payments/payment/discover.jpg";
 import mastercard from "../../../images/payments/payment/master-card.jpg";
 import visa from "../../../images/payments/payment/visa.jpg";
@@ -85,6 +97,54 @@ class OurPractice extends Component {
           name: "Debbie Arteaga",
           designation: "Medical and Cosmetic Aesthetician",
           link: "/debbie-arteaga",
+        },
+        {
+          id: 7,
+          image: Soriano,
+          imageTiny: SorianoTiny,
+          name: "Jeanette Soriano",
+          designation: "Administrative",
+          link: "/jeanette-soriano",
+        },
+        {
+          id: 8,
+          image: Delfino,
+          imageTiny: DelfinoTiny,
+          name: "Melissa Delfino",
+          designation: "Administrative",
+          link: "/melissa-delfino",
+        },
+        {
+          id: 9,
+          image: Bauer,
+          imageTiny: BauerTiny,
+          name: "Katie Bauer",
+          designation: "Administrative",
+          link: "/katie-bauer",
+        },
+        {
+          id: 10,
+          image: Ouyang,
+          imageTiny: OuyangTiny,
+          name: "Janie Ouyang",
+          designation: "Administrative",
+          link: "/janie-ouyang",
+        },
+        {
+          id: 11,
+          image: Abid,
+          imageTiny: AbidTiny,
+          name: "Ammara Abid",
+          designation: "Administrative",
+          link: "/ammara-abid",
+        },
+        {
+          id: 12,
+          image: Lauter,
+          imageTiny: LauterTiny,
+          name: "Mia Lauter",
+          designation: "Administrative",
+          link: "/mia-lauter",
         },
       ],
       paymentMethods: [
