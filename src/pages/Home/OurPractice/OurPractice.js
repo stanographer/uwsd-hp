@@ -47,9 +47,9 @@ class OurPractice extends Component {
       pathItems: [
         //id must required
         { id: 1, name: "Home", link: "/" },
-        { id: 3, name: "Our Practice", link: "/physicians" },
+        { id: 3, name: "Our Practice", link: "/our-practice" },
       ],
-      candidates: [
+      physicians: [
         {
           id: 1,
           image: Travis,
@@ -90,30 +90,8 @@ class OurPractice extends Component {
           designation: "Mohs Surgeon",
           link: "/sarah-yagerman",
         },
-        {
-          id: 6,
-          image: Gonzalez,
-          imageTiny: GonzalezTiny,
-          name: "Karla Gonzalez",
-          designation: "Administrative",
-          link: "/melissa-delfino",
-        },
-        {
-          id: 7,
-          image: Soriano,
-          imageTiny: SorianoTiny,
-          name: "Jeanette Soriano",
-          designation: "Administrative",
-          link: "/jeanette-soriano",
-        },
-        {
-          id: 8,
-          image: Arteaga,
-          imageTiny: ArteagaTiny,
-          name: "Debbie Arteaga",
-          designation: "Medical and Cosmetic Aesthetician",
-          link: "/debbie-arteaga",
-        },
+      ],
+      assistants: [
         {
           id: 9,
           image: Bauer,
@@ -145,6 +123,32 @@ class OurPractice extends Component {
           name: "Mia Lauter",
           designation: "Medical Assistant",
           link: "/mia-lauter",
+        },
+        {
+          id: 8,
+          image: Arteaga,
+          imageTiny: ArteagaTiny,
+          name: "Debbie Arteaga",
+          designation: "Medical and Cosmetic Aesthetician",
+          link: "/debbie-arteaga",
+        },
+      ],
+      admin: [
+        {
+          id: 6,
+          image: Gonzalez,
+          imageTiny: GonzalezTiny,
+          name: "Karla Gonzalez",
+          designation: "Administrative",
+          link: "/melissa-delfino",
+        },
+        {
+          id: 7,
+          image: Soriano,
+          imageTiny: SorianoTiny,
+          name: "Jeanette Soriano",
+          designation: "Administrative",
+          link: "/jeanette-soriano",
         },
       ],
       paymentMethods: [
@@ -208,16 +212,24 @@ class OurPractice extends Component {
           <Container>
             {/* Render Section Title */}
             <SectionTitle
-              title="Physicians"
-              desc="Our team of board-certified dermatologists is experienced with both the fundamental and latest treatments in medical, pediatric, surgical, and cosmetic dermatology. Each dermatologist contributes unique skills, and we collaborate to deliver comprehensive and individualized care to every patient."
+              title="World-Class Care"
+              desc="Our team of board-certified dermatologists and specialists are experienced with both the fundamental and latest treatments in medical, pediatric, surgical, and cosmetic dermatology. Each dermatologist contributes unique skills, and we collaborate to deliver comprehensive and individualized care to every patient."
               isLeft={false}
             />
             <Row>
-              {/* teambox */}
-              <TeamBox candidates={this.state.candidates} />
+              <TeamBox candidates={this.state.physicians} />
+            </Row>
+            <hr />
+            <Row>
+              <TeamBox candidates={this.state.assistants} />
+            </Row>
+            <hr />
+            <Row>
+              <TeamBox candidates={this.state.admin} />
             </Row>
           </Container>
         </section>
+
         <section className="section bg-light" id="patient-information">
           <Container>
             {/* Render Section Title */}
@@ -309,6 +321,7 @@ class OurPractice extends Component {
                   </div>
                 </div>
               </Col>
+
               <Col lg="4" md="6" xs="12" className="mt-4 pt-2">
                 <div className="job-box rounded shadow position-relative overflow-hidden">
                   <div className="border-bottom bg-white">
@@ -365,6 +378,7 @@ class OurPractice extends Component {
                 </a>
               }
             />
+            \
             <Row className="mt-4">
               <Col lg="4" md="4">
                 <div className="map map-height-two rounded map-gray">
@@ -377,6 +391,7 @@ class OurPractice extends Component {
                   ></iframe>
                 </div>
               </Col>
+
               <Col lg="4" md="4" className="mt-4 pt-2">
                 <div className="title-heading ml-lg-4">
                   <div className="contact-detail mt-3 mb-3">
