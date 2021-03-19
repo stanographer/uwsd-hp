@@ -6,7 +6,8 @@ const Root = React.lazy(() => import('./pages/Home/indexMain'));
 // Conditions and procedures
 const BotoxAndDysport = React.lazy(() => import('./pages/Home/Services/BotoxAndDysport'));
 const Acne = React.lazy(() => import('./pages/Home/Services/Acne'));
-const SkinCancerScreening = React.lazy(() => import('./pages/Home/Services/SkinCancerScreening'))
+const SkinCancerScreening = React.lazy(() => import('./pages/Home/Services/SkinCancerScreening'));
+const MohsSurgery = React.lazy(() => import('./pages/Home/Services/MohsSurgery'));
 const PageContactDetail = React.lazy(() => import('./pages/Pages/Contact/PageContactDetail'));
 
 // Physicians
@@ -108,6 +109,7 @@ const routes = [
     { path: '/botox-and-dysport', component: BotoxAndDysport },
     { path: '/acne', component: Acne },
     { path: '/skin-cancer-screening', component: SkinCancerScreening },
+    { path: '/mohs-surgery', component: MohsSurgery },
 
     // Physicians
     { path: '/our-practice', component: OurPractice },

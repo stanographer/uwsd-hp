@@ -50,6 +50,7 @@ class Index extends Component {
 
   render() {
     const {
+      additionalInfo,
       bg,
       bgTiny,
       bgPositioning,
@@ -96,6 +97,9 @@ class Index extends Component {
                       Contact Us Today
                     </Link>
                   </div>
+                  <div className="mt-5">
+                    {additionalInfo}
+                  </div>
                 </div>
               </Col>
             </Row>
@@ -112,8 +116,9 @@ class Index extends Component {
                   <p className="answer text-muted ml-lg-4 pl-lg-3 mb-3 mt-4">
                     <p className="dark-purple">
                       <em>
-                        What {treatment.plural ? "are" : "is"} {treatment.title}
-                        ?
+                        {
+                          treatment.sectionHeader ? `What ${treatment.plural ? "are" : "is"} ${treatment.title}?` : null
+                        }
                       </em>
                     </p>
                     {treatment.description}
