@@ -133,6 +133,23 @@ class MeetThePhysicians extends Component {
                     </div>
                   </div>
 
+                  <div className="contact-detail mt-3">
+                    <div className="icon mt-3 float-left">
+                      <i className="mdi mdi-android-messages text-muted mdi-36px mr-3"></i>
+                    </div>
+                    <div className="content mt-3 overflow-hidden d-block">
+                      <h4 className="title font-weight-bold mb-0">Text/SMS</h4>
+                      <Link
+                        to="#"
+                        onClick={this.callOffice}
+                        className="text-primary h6"
+                      >
+                        +1 833 656 0677
+                      </Link>
+                      <br />
+                    </div>
+                  </div>
+
                   <div className="contact-detail mt-3 mb-4">
                     <div className="icon mt-3 float-left">
                       <i className="mdi mdi-printer text-muted mdi-36px mr-3"></i>

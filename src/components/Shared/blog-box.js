@@ -7,7 +7,15 @@ class BlogBox extends Component {
     return (
       <React.Fragment>
         {this.props.blogs.map((blog, key) => (
-          <Col lg="4" md="6" sm="12" className="mt-4 pt-2" key={key} name="blog" className="avatar-box">
+          <Col
+            lg="4"
+            md="6"
+            sm="12"
+            className="mt-4 pt-2"
+            key={key}
+            name="blog"
+            className="avatar-box"
+          >
             <div className="blog position-relative overflow-hidden rounded">
               <div className="position-relative">
                 <img

@@ -15,8 +15,8 @@ class MohsSurgery extends React.Component {
       plural: false,
       bg,
       bgTiny,
-      image,
-      imageTiny,
+      image: null,
+      imageTiny: null,
       description:
         "Mohs surgery is considered the most effective technique for treating many basal cell carcinomas (BCCs) and squamous cell carcinomas (SCCs), the two most common types of skin cancer. Sometimes called Mohs micrographic surgery, the procedure is done in stages, including lab work, while the patient waits. This allows the removal of all cancerous cells for the highest cure rate while sparing healthy tissue and leaving the smallest possible scar.",
       treatmentDescription: "",

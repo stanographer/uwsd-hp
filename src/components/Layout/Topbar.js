@@ -261,12 +261,11 @@ class Topbar extends Component {
             <div>
               <Link className="logo show-on-desktop" to="/index">
                 Upper West Side Dermatology
-                <span className="text-primary">.</span>
               </Link>
             </div>
             <div>
               <Link className="logo show-on-mobile" to="/index">
-                UWS Dermatology<span className="text-primary">.</span>
+                UWS Dermatology
               </Link>
             </div>
             <div className="menu-extras">

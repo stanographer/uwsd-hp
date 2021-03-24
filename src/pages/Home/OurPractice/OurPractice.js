@@ -76,24 +76,40 @@ class OurPractice extends Component {
         },
         {
           id: 4,
-          image: Donnelley,
-          imageTiny: DonnelleyTiny,
-          name: "Dr. Naomi Donnelley",
-          designation: "Board-Certified Dermatologist",
-          link: "/naomi-donnelley",
-        },
-        {
-          id: 5,
           image: Yagerman,
           imageTiny: YagermanTiny,
           name: "Dr. Sarah Yagerman",
           designation: "Mohs Surgeon",
           link: "/sarah-yagerman",
         },
+        {
+          id: 5,
+          image: Donnelley,
+          imageTiny: DonnelleyTiny,
+          name: "Dr. Naomi Donnelley",
+          designation: "Board-Certified Dermatologist",
+          link: "/naomi-donnelley",
+        },
       ],
       assistants: [
         {
-          id: 9,
+          id: 6,
+          image: Ouyang,
+          imageTiny: OuyangTiny,
+          name: "Janie Ouyang",
+          designation: "Medical Assistant Supervisor",
+          link: "/janie-ouyang",
+        },
+        {
+          id: 7,
+          image: Abid,
+          imageTiny: AbidTiny,
+          name: "Ammara Abid",
+          designation: "Senior Medical Assistant",
+          link: "/ammara-abid",
+        },
+        {
+          id: 8,
           image: Bauer,
           imageTiny: BauerTiny,
           name: "Katie Bauer",
@@ -101,23 +117,7 @@ class OurPractice extends Component {
           link: "/katie-bauer",
         },
         {
-          id: 10,
-          image: Ouyang,
-          imageTiny: OuyangTiny,
-          name: "Janie Ouyang",
-          designation: "Medical Assistant",
-          link: "/janie-ouyang",
-        },
-        {
-          id: 11,
-          image: Abid,
-          imageTiny: AbidTiny,
-          name: "Ammara Abid",
-          designation: "Medical Assistant",
-          link: "/ammara-abid",
-        },
-        {
-          id: 12,
+          id: 9,
           image: Lauter,
           imageTiny: LauterTiny,
           name: "Mia Lauter",
@@ -125,7 +125,7 @@ class OurPractice extends Component {
           link: "/mia-lauter",
         },
         {
-          id: 8,
+          id: 10,
           image: Arteaga,
           imageTiny: ArteagaTiny,
           name: "Debbie Arteaga",
@@ -135,19 +135,19 @@ class OurPractice extends Component {
       ],
       admin: [
         {
-          id: 6,
+          id: 11,
           image: Gonzalez,
           imageTiny: GonzalezTiny,
           name: "Karla Gonzalez",
-          designation: "Administrative",
-          link: "/melissa-delfino",
+          designation: "Office Manager",
+          link: "/karla-gonzalez",
         },
         {
-          id: 7,
+          id: 12,
           image: Soriano,
           imageTiny: SorianoTiny,
           name: "Jeanette Soriano",
-          designation: "Administrative",
+          designation: "Patient Care Coordinator",
           link: "/jeanette-soriano",
         },
       ],
@@ -423,7 +423,7 @@ class OurPractice extends Component {
                         onClick={this.sendMail}
                         className="text-primary h6"
                       >
-                        uwsderm@gmail.com
+                        uwsderm@uwsdermatology.com
                       </Link>
                     </div>
                   </div>
@@ -476,7 +476,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 500 pm</span>
+                        <span className="h6">8:30 am – 5:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -486,7 +486,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 700 pm</span>
+                        <span className="h6">8:30 am – 7:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -496,7 +496,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 500 pm</span>
+                        <span className="h6">8:30 am – 5:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -506,7 +506,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 500 pm</span>
+                        <span className="h6">8:30 am – 5:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -516,7 +516,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 500 pm</span>
+                        <span className="h6">8:30 am – 5:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -526,7 +526,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">1000 am – 200 pm</span>
+                        <span className="h6">10:00 am – 2:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
