@@ -75,14 +75,6 @@ class OurPractice extends Component {
           link: "/falguni-asrani",
         },
         {
-          id: 4,
-          image: Donnelley,
-          imageTiny: DonnelleyTiny,
-          name: "Dr. Naomi Donnelley",
-          designation: "Board-Certified Dermatologist",
-          link: "/naomi-donnelley",
-        },
-        {
           id: 5,
           image: Yagerman,
           imageTiny: YagermanTiny,
@@ -445,6 +437,23 @@ class OurPractice extends Component {
                     </div>
                   </div>
 
+                  <div className="contact-detail mt-3">
+                    <div className="icon mt-3 float-left">
+                      <i className="mdi mdi-android-messages text-muted mdi-36px mr-3"></i>
+                    </div>
+                    <div className="content mt-3 overflow-hidden d-block">
+                      <h4 className="title font-weight-bold mb-0">Text Us</h4>
+                      <Link
+                        to="#"
+                        onClick={this.callOffice}
+                        className="text-primary h6"
+                      >
+                        +1 833 656 0677
+                      </Link>
+                      <br />
+                    </div>
+                  </div>
+
                   <div className="contact-detail mt-3 mb-4">
                     <div className="icon mt-3 float-left">
                       <i className="mdi mdi-printer text-muted mdi-36px mr-3"></i>
@@ -460,6 +469,7 @@ class OurPractice extends Component {
                       </Link>
                     </div>
                   </div>
+                  
                 </div>
               </Col>
               <Col lg="4" md="4" className="mt-4 pt-2">
@@ -476,7 +486,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 500 pm</span>
+                        <span className="h6">8:30 am – 5:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -486,7 +496,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 700 pm</span>
+                        <span className="h6">8:30 am – 7:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -496,7 +506,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 500 pm</span>
+                        <span className="h6">8:30 am – 5:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -506,7 +516,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 500 pm</span>
+                        <span className="h6">8:30 am – 5:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -516,7 +526,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">830 am – 500 pm</span>
+                        <span className="h6">8:30 am – 5:00 pm</span>
                       </Col>
                     </Row>
                     <Row>
@@ -526,7 +536,7 @@ class OurPractice extends Component {
                         </span>
                       </Col>
                       <Col xs={8}>
-                        <span className="h6">1000 am – 200 pm</span>
+                        <span className="h6">10:00 am – 2:00 pm</span>
                       </Col>
                     </Row>
                     <Row>

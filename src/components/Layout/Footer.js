@@ -98,7 +98,7 @@ class Footer extends Component {
               <Col sm="12">
                 <div className="text-sm-left">
                   <p className="mb-0">
-                    <em>© 2020-21 Upper West Side Dermatology.</em>
+                    <em>© 2020-21 Upper West Side Dermatology</em>
                   </p>
                 </div>
               </Col>
