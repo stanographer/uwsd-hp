@@ -138,7 +138,7 @@ class MeetThePhysicians extends Component {
                       <i className="mdi mdi-android-messages text-muted mdi-36px mr-3"></i>
                     </div>
                     <div className="content mt-3 overflow-hidden d-block">
-                      <h4 className="title font-weight-bold mb-0">Text/SMS</h4>
+                      <h4 className="title font-weight-bold mb-0">Text Us</h4>
                       <Link
                         to="#"
                         onClick={this.callOffice}
