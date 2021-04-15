@@ -1,7 +1,7 @@
 // React Basic and Bootstrap
 import React, { Component } from "react";
 import { Container } from "reactstrap";
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 // Import Generic Components
 import Location from "./Location";
@@ -21,6 +21,14 @@ class IndexMain extends Component {
   componentDidMount() {
     document.body.classList = "";
     window.addEventListener("scroll", this.scrollNavigation, true);
+    (function (d) {
+      var script = d.createElement("script");
+      script.type = "text/javascript";
+      script.async = true;
+      script.src = "https://offsiteschedule.zocdoc.com/plugin/embed";
+      var s = d.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(script, s);
+    })(document);
   }
 
   // Make sure to remove the DOM listener when the component is unmounted.
@@ -109,6 +117,23 @@ class IndexMain extends Component {
             </svg>
           </div>
         </div>
+        <>
+          <a
+            style={{ display: "none" }}
+            href="https://www.zocdoc.com/practice/upper-west-side-dermatology-1307"
+            className="zd-plugin"
+            data-type="book-button"
+            data-practice-id="1307"
+            title="Upper West Side Dermatology"
+          >
+            <img
+              src="https://offsiteSchedule.zocdoc.com/images/remote/zd_bookonline_162x48.png"
+              alt="Upper West Side Dermatology"
+              title="Upper West Side Dermatology"
+              style={{ border: 0 }}
+            />
+          </a>
+        </>
       </React.Fragment>
     );
   }

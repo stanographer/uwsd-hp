@@ -13,7 +13,6 @@ import "./css/materialdesignicons.min.css";
 import "./css/colors/default.css";
 import "./scss/main.scss";
 
-
 // Include Routes
 import routes from "./routes";
 
@@ -31,6 +30,11 @@ function withLayout(WrappedComponent) {
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   Loader = () => {
     return (
       <div id="preloader">
@@ -43,6 +47,7 @@ class App extends Component {
       </div>
     );
   };
+
   render() {
     return (
       <React.Fragment>
