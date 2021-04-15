@@ -13,6 +13,7 @@ import "./css/materialdesignicons.min.css";
 import "./css/colors/default.css";
 import "./scss/main.scss";
 
+
 // Include Routes
 import routes from "./routes";
 
