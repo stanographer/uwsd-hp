@@ -14,7 +14,6 @@ const Feature = React.lazy(() => import('./Feature'));
 const Footer = React.lazy(() => import('./Footer'));
 
 class IndexRoot extends Component {
-
     Loader = () => {
         return (
           <div id="preloader">

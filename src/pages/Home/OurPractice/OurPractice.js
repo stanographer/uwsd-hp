@@ -179,7 +179,21 @@ class OurPractice extends Component {
       teambox[i].classList.remove("bg-white");
       teambox[i].classList.remove("pt-3");
     }
+
+    document.body.classList = "";
+    window.addEventListener("scroll", this.scrollNavigation, true);
+
+    setTimeout(() => {
+        const script = document.createElement("script");
+  
+        script.src = "https://offsiteschedule.zocdoc.com/plugin/embed";
+        script.async = true;
+  
+        document.body.appendChild(script);
+
+    }, 600);
   }
+
   // Make sure to remove the DOM listener when the component is unmounted.
   componentWillUnmount() {
     window.removeEventListener("scroll", this.scrollNavigation, true);
@@ -199,6 +213,23 @@ class OurPractice extends Component {
     const { pathItems } = this.state;
     return (
       <React.Fragment>
+        <>
+          <a
+            style={{ display: "none" }}
+            href="https://www.zocdoc.com/practice/upper-west-side-dermatology-1307"
+            className="zd-plugin"
+            data-type="book-button"
+            data-practice-id="1307"
+            title="Upper West Side Dermatology"
+          >
+            <img
+              src="https://offsiteSchedule.zocdoc.com/images/remote/zd_bookonline_162x48.png"
+              alt="Upper West Side Dermatology"
+              title="Upper West Side Dermatology"
+              style={{ border: 0 }}
+            />
+          </a>
+        </>
         {/* breadcrumb */}
         <PageBreadcrumb
           title="Our Practice"

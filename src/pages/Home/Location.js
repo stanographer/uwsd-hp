@@ -31,6 +31,11 @@ const LazyImage = ({ image, scrollPosition }) => (
 );
 
 class MeetThePhysicians extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   sendMail() {
     window.location.href = "mailto:uwsderm@gmail.com";
   }
@@ -46,6 +51,23 @@ class MeetThePhysicians extends Component {
   render() {
     return (
       <React.Fragment>
+        <>
+          <a
+            style={{ display: "none" }}
+            href="https://www.zocdoc.com/practice/upper-west-side-dermatology-1307"
+            className="zd-plugin"
+            data-type="book-button"
+            data-practice-id="1307"
+            title="Upper West Side Dermatology"
+          >
+            <img
+              src="https://offsiteSchedule.zocdoc.com/images/remote/zd_bookonline_162x48.png"
+              alt="Upper West Side Dermatology"
+              title="Upper West Side Dermatology"
+              style={{ border: 0 }}
+            />
+          </a>
+        </>
         <section className="section pt-0 bg-light">
           <Container fluid>
             <Row>

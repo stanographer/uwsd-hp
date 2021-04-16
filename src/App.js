@@ -30,11 +30,6 @@ function withLayout(WrappedComponent) {
 }
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   Loader = () => {
     return (
       <div id="preloader">
