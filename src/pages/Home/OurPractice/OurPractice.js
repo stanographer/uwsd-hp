@@ -15,13 +15,11 @@ import Cossman from "../../../images/team/avatars/jack-cossman.jpg";
 import Travis from "../../../images/team/avatars/lisa-travis.jpg";
 import Asrani from "../../../images/team/avatars/falguni-asrani.jpg";
 import Yagerman from "../../../images/team/avatars/sarah-yagerman.jpg";
-import Donnelley from "../../../images/team/avatars/naomi-donnelley.jpg";
 import Arteaga from "../../../images/team/avatars/debbie-arteaga.jpg";
 import CossmanTiny from "../../../images/team/avatars/jack-cossman-tiny.jpg";
 import TravisTiny from "../../../images/team/avatars/lisa-travis-tiny.jpg";
 import AsraniTiny from "../../../images/team/avatars/falguni-asrani-tiny.jpg";
 import YagermanTiny from "../../../images/team/avatars/sarah-yagerman-tiny.jpg";
-import DonnelleyTiny from "../../../images/team/avatars/naomi-donnelley-tiny.jpg";
 import ArteagaTiny from "../../../images/team/avatars/debbie-arteaga-tiny.jpg";
 import Soriano from "../../../images/team/avatars/jeanette-soriano.jpg";
 import SorianoTiny from "../../../images/team/avatars/jeanette-soriano-tiny.jpg";
@@ -82,18 +80,10 @@ class OurPractice extends Component {
           designation: "Mohs Surgeon",
           link: "/sarah-yagerman",
         },
-        {
-          id: 5,
-          image: Donnelley,
-          imageTiny: DonnelleyTiny,
-          name: "Dr. Naomi Donnelley",
-          designation: "Board-Certified Dermatologist",
-          link: "/naomi-donnelley",
-        },
       ],
       assistants: [
         {
-          id: 6,
+          id: 5,
           image: Ouyang,
           imageTiny: OuyangTiny,
           name: "Janie Ouyang",
@@ -101,7 +91,7 @@ class OurPractice extends Component {
           link: "/janie-ouyang",
         },
         {
-          id: 7,
+          id: 6,
           image: Abid,
           imageTiny: AbidTiny,
           name: "Ammara Abid",
@@ -109,7 +99,7 @@ class OurPractice extends Component {
           link: "/ammara-abid",
         },
         {
-          id: 8,
+          id: 7,
           image: Bauer,
           imageTiny: BauerTiny,
           name: "Katie Bauer",
@@ -117,7 +107,7 @@ class OurPractice extends Component {
           link: "/katie-bauer",
         },
         {
-          id: 9,
+          id: 8,
           image: Lauter,
           imageTiny: LauterTiny,
           name: "Mia Lauter",
@@ -125,7 +115,7 @@ class OurPractice extends Component {
           link: "/mia-lauter",
         },
         {
-          id: 10,
+          id: 9,
           image: Arteaga,
           imageTiny: ArteagaTiny,
           name: "Debbie Arteaga",
@@ -135,7 +125,7 @@ class OurPractice extends Component {
       ],
       admin: [
         {
-          id: 11,
+          id: 10,
           image: Gonzalez,
           imageTiny: GonzalezTiny,
           name: "Karla Gonzalez",
@@ -143,7 +133,7 @@ class OurPractice extends Component {
           link: "/karla-gonzalez",
         },
         {
-          id: 12,
+          id: 11,
           image: Soriano,
           imageTiny: SorianoTiny,
           name: "Jeanette Soriano",
@@ -471,6 +461,23 @@ class OurPractice extends Component {
                         className="text-primary h6"
                       >
                         +1 212 769 0069
+                      </Link>
+                      <br />
+                    </div>
+                  </div>
+
+                  <div className="contact-detail mt-3">
+                    <div className="icon mt-3 float-left">
+                      <i className="mdi mdi-android-messages text-muted mdi-36px mr-3"></i>
+                    </div>
+                    <div className="content mt-3 overflow-hidden d-block">
+                      <h4 className="title font-weight-bold mb-0">Text Us</h4>
+                      <Link
+                        to="#"
+                        onClick={this.callOffice}
+                        className="text-primary h6"
+                      >
+                        +1 833 656 0677
                       </Link>
                       <br />
                     </div>
