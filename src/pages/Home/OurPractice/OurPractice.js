@@ -102,9 +102,9 @@ class OurPractice extends Component {
           id: 7,
           image: Bauer,
           imageTiny: BauerTiny,
-          name: "Katie Bauer",
+          name: "Katie Bower",
           designation: "Medical Assistant",
-          link: "/katie-bauer",
+          link: "/katie-bower",
         },
         {
           id: 8,
@@ -136,9 +136,9 @@ class OurPractice extends Component {
           id: 11,
           image: Soriano,
           imageTiny: SorianoTiny,
-          name: "Jeanette Soriano",
+          name: "Jeannette Soriano",
           designation: "Patient Care Coordinator",
-          link: "/jeanette-soriano",
+          link: "/jeannette-soriano",
         },
       ],
       paymentMethods: [

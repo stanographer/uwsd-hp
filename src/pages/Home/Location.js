@@ -133,7 +133,7 @@ class MeetThePhysicians extends Component {
                         onClick={this.sendMail}
                         className="text-primary h6"
                       >
-                        uwsderm@gmail.com
+                        uwsderm@uwsdermatology.com
                       </Link>
                     </div>
                   </div>

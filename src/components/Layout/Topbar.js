@@ -43,6 +43,11 @@ class Topbar extends Component {
               description: "Here is a description about alopecia.",
             },
             {
+              title: "Mohs Surgery",
+              link: "/mohs-surgery",
+              description: "MOHS.",
+            },
+            {
               title: "Warts",
               link: "/warts",
               description: "Something here about warts.",
@@ -152,19 +157,6 @@ class Topbar extends Component {
               title: "Facials",
               link: "/facials",
               description: "I could use one of these right now.",
-            },
-          ],
-        },
-        {
-          id: 4,
-          title: "Surgical",
-          link: "/#",
-          isOpenSubMenu: false,
-          child: [
-            {
-              title: "Mohs Surgery",
-              link: "/mohs-surgery",
-              description: "MOHS.",
             },
           ],
         },
