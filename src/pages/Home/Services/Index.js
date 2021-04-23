@@ -97,37 +97,43 @@ class Index extends Component {
                       Contact Us Today
                     </Link>
                   </div>
-                  <div className="mt-5">
-                    {additionalInfo}
-                  </div>
+                  <div className="mt-5">{additionalInfo}</div>
                 </div>
               </Col>
             </Row>
           </Container>
         </section>
 
-        <section className="bg-light section">
-          <Container>
-            <SectionTitle title="Our Treatment Options" />
-            {treatments.map((treatment, key) => (
-              <React.Fragment>
-                <div className="faq-container mb-5" key={key}>
-                  <h4 className="question darker-purple">{treatment.title}</h4>
-                  <p className="answer text-muted ml-lg-4 pl-lg-3 mb-3 mt-4">
-                    <p className="dark-purple">
-                      <em>
-                        {
-                          treatment.sectionHeader ? `What ${treatment.plural ? "are" : "is"} ${treatment.title}?` : null
-                        }
-                      </em>
-                    </p>
-                    {treatment.description}
-                  </p>
-                </div>
-              </React.Fragment>
-            ))}
-          </Container>
-        </section>
+        {treatments && (
+          <>
+            <section className="bg-light section">
+              <Container>
+                <SectionTitle title="Our Treatment Options" />
+                {treatments.map((treatment, key) => (
+                  <React.Fragment>
+                    <div className="faq-container mb-5" key={key}>
+                      <h4 className="question darker-purple">
+                        {treatment.title}
+                      </h4>
+                      <p className="answer text-muted ml-lg-4 pl-lg-3 mb-3 mt-4">
+                        <p className="dark-purple">
+                          <em>
+                            {treatment.sectionHeader
+                              ? `What ${treatment.plural ? "are" : "is"} ${
+                                  treatment.title
+                                }?`
+                              : null}
+                          </em>
+                        </p>
+                        {treatment.description}
+                      </p>
+                    </div>
+                  </React.Fragment>
+                ))}
+              </Container>
+            </section>
+          </>
+        )}
       </React.Fragment>
     );
   }

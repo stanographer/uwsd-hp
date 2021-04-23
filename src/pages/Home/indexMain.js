@@ -1,11 +1,12 @@
 // React Basic and Bootstrap
 import React, { Component } from "react";
-import { Container } from "reactstrap";
+import { Container, Col, Row } from "reactstrap";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 // Import Generic Components
 import Location from "./Location";
 import Section from "./section";
+import SectionTitle from "../../components/Shared/section-title";
 import Partners from "../../components/Shared/Partners";
 import MeetThePhysicians from "./MeetThePhysicians";
 import Testi from "./Testi";
@@ -21,7 +22,7 @@ class IndexMain extends Component {
   componentDidMount() {
     document.body.classList = "";
     window.addEventListener("scroll", this.scrollNavigation, true);
-    
+
     setTimeout(() => {
       const script = document.createElement("script");
 
@@ -29,8 +30,7 @@ class IndexMain extends Component {
       script.async = true;
 
       document.body.appendChild(script);
-
-  }, 600);
+    }, 2300);
   }
 
   // Make sure to remove the DOM listener when the component is unmounted.
@@ -79,11 +79,19 @@ class IndexMain extends Component {
             <Partners />
           </Container>
         </section>
-
+        <section className="pt-5 pb-5 border-bottom">
+          <SectionTitle
+            title="Important Covid-19 Updates"
+            desc="While many things have changed since the start of the COVID-19 outbreak, we are still committed to your safety and to providing quality care. We understand that you may have some concerns regarding returning to a doctor's office at this time. Rest assured that we are implementing strict safety procedures and following infection control recommendations advised by the CDC to protect both our patients and staff."
+          />
+          <Row className="justify-content-center">
+            <a href="/covid-protocols" className="btn btn-primary mt-2 mr-1">
+              Our Covid-19 Protocols
+            </a>
+          </Row>
+        </section>
         <MeetThePhysicians />
-
         <Procedures />
-
         <Location />
         <LazyLoadComponent>
           {/* Testi */}

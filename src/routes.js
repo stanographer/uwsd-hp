@@ -15,9 +15,11 @@ const OurPractice = React.lazy(() => import('./pages/Home/OurPractice/OurPractic
 const Arteaga = React.lazy(() => import('./pages/Home/OurPractice/Arteaga'));
 const Asrani = React.lazy(() => import('./pages/Home/OurPractice/Asrani'));
 const Cossman = React.lazy(() => import('./pages/Home/OurPractice/Cossman'));
-const Donnelley = React.lazy(() => import('./pages/Home/OurPractice/Donnelley'));
 const Travis = React.lazy(() => import('./pages/Home/OurPractice/Travis'));
 const Yagerman = React.lazy(() => import('./pages/Home/OurPractice/Yagerman'));
+
+// Extra
+const CovidProtocols = React.lazy(() => import('./pages/Home/Services/CovidProtocols'));
 
 //Special
 const PageComingSoon = React.lazy(() => import('./pages/Pages/Special/PageComingSoon'));
@@ -117,8 +119,10 @@ const routes = [
     { path: '/falguni-asrani', component: Asrani },
     { path: '/jack-cossman', component: Cossman },
     { path: '/lisa-travis', component: Travis },
-    { path: '/naomi-donnelley', component: Donnelley },
     { path: '/sarah-yagerman', component: Yagerman },
+
+    // Extra
+    { path: '/covid-protocols', component: CovidProtocols },
 
     //Contct withour layout
     { path: '/page-contact-detail', component: PageContactDetail, isWithoutLayout : true },
