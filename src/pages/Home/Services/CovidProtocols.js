@@ -94,8 +94,7 @@ class CovidProtocols extends React.Component {
       imageTiny,
       pathItems: [
         { id: 1, name: "Home", link: "/" },
-        { id: 2, name: "Cosmetic", link: "#" },
-        { id: 3, name: "Botox & Dysport", link: "/botox-and-dysport" },
+        { id: 2, name: "Covid-19 Updates and Protocols", link: "#" },
       ],
       signs: [],
     };

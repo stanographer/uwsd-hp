@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "reactstrap";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
+import postscribe from "postscribe";
 
 // Import Generic Components
 import Location from "./Location";
@@ -24,18 +25,19 @@ class IndexMain extends Component {
     window.addEventListener("scroll", this.scrollNavigation, true);
 
     setTimeout(() => {
-      const script = document.createElement("script");
+      this.script = document.createElement("script");
 
-      script.src = "https://offsiteschedule.zocdoc.com/plugin/embed";
-      script.async = true;
+      this.script.src = "https://offsiteschedule.zocdoc.com/plugin/embed";
+      this.script.defer = true;
 
-      document.body.appendChild(script);
+      document.head.appendChild(this.script);
     }, 2300);
   }
 
   // Make sure to remove the DOM listener when the component is unmounted.
   componentWillUnmount() {
     window.removeEventListener("scroll", this.scrollNavigation, true);
+    document.body.removeChild(this.script);
   }
 
   scrollNavigation = () => {

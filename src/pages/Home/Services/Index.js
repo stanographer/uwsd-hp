@@ -33,6 +33,7 @@ class Index extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.scrollNavigation, true);
   }
+
   // Make sure to remove the DOM listener when the component is unmounted.
   componentWillUnmount() {
     window.removeEventListener("scroll", this.scrollNavigation, true);
@@ -91,7 +92,7 @@ class Index extends Component {
               <Col lg="8" md="7" xs="12" className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                 <div className="ml-lg-4 mb-3">
                   <h4 className="mb-4">About {title}</h4>
-                  <p className="mb-5 text-muted">{description}</p>
+                  <div className="mb-5 text-muted">{description}</div>
                   <div className="mt-4">
                     <Link to="/page-job-apply" className="btn btn-primary">
                       Contact Us Today
