@@ -23,21 +23,11 @@ class IndexMain extends Component {
   componentDidMount() {
     document.body.classList = "";
     window.addEventListener("scroll", this.scrollNavigation, true);
-
-    setTimeout(() => {
-      this.script = document.createElement("script");
-
-      this.script.src = "https://offsiteschedule.zocdoc.com/plugin/embed";
-      this.script.defer = true;
-
-      document.head.appendChild(this.script);
-    }, 2300);
   }
 
   // Make sure to remove the DOM listener when the component is unmounted.
   componentWillUnmount() {
     window.removeEventListener("scroll", this.scrollNavigation, true);
-    document.body.removeChild(this.script);
   }
 
   scrollNavigation = () => {
@@ -61,6 +51,7 @@ class IndexMain extends Component {
       <React.Fragment>
         {/* Home Section */}
         <Section />
+        
         <div className="position-relative">
           <div className="shape overflow-hidden text-white">
             <svg
