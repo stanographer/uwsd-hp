@@ -26,10 +26,10 @@ class Donnelley extends React.Component {
       description: (
         <React.Fragment>
           <p>
-            Dr. Naomi Donnelley, a board certified dermatologist with 13 years
+            Dr. Naomi Donnelley is a board certified dermatologist with 17 years
             of post-residency experience in both academic and private practice
-            settings, specializes in general medical, surgical and cosmetic
-            dermatology. She sees both adult and pediatric patients.
+            settings. She specializes in general medical, surgical and cosmetic
+            dermatology and sees both adult and pediatric patients.
           </p>
           <p>
             Dr. Donnelley graduated from Yale University, magna cum laude, with
@@ -46,10 +46,8 @@ class Donnelley extends React.Component {
           <p>
             After residency, Dr. Donnelley worked as a Clinical Associate
             Professor at The Northwestern Memorial Physicians Group for over 6
-            years. When Chicago winters became too much, she and her family
-            explored living and working in Santa Barbara, California and
-            Charleston, SC. While they thoroughly enjoyed both places, they are
-            happy to return to Dr. Donnelley’s hometown of New York City.
+            years. She also practiced in Santa Barbara, CA and Charleston, SC
+            before returning to her hometown of NYC in 2017.
           </p>
           <p>
             Dr. Donnelley prides herself on her meticulous care and positive
@@ -59,7 +57,7 @@ class Donnelley extends React.Component {
             medications and coordination with rheumatologists, allergists,
             plastic surgeons and more. Surgery and procedural dermatology are
             some of Dr. Donnelley’s fortes. She has diagnosed and excised
-            hundreds of malignant and benign neoplasms. When it comes to
+            thousands of malignant and benign neoplasms. When it comes to
             cosmetic dermatology, she believes in a less is more approach to
             achieve a very natural look with botox, fillers and lasers. She
             takes her time to give her patients a fresh and youthful look
@@ -67,10 +65,14 @@ class Donnelley extends React.Component {
             from when they were younger to help guide treatment.
           </p>
           <p>
-            In her free time, she enjoys spending time with her husband, three
-            children and 2 dogs, and enjoys travel, any activities involving
+            In her free time, she enjoys spending time with her three children,
+            2 dogs, and a cat. She enjoys travel, any activities involving
             water, fine dining and reading.
           </p>
+          <a href="https://qwell.com/dermatology/naomi-donnelly-md"
+            className="btn btn-primary mt-2 mr-1"
+            target="_blank">Make an appointment with Dr. Donnelley</a>
+          
         </React.Fragment>
       ),
       pathItems: [

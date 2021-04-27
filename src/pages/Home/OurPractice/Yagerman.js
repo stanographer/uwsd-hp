@@ -66,6 +66,10 @@ class Acne extends React.Component {
             time her family. She came to running later in life and sincerely
             hopes there will be public races again in the near future!
           </p>
+          <a href="https://www.zocdoc.com/doctor/sarah-yagerman-md-317368?LocIdent=-1&isNewPatient=false&reason_visit=-1&referrerType=Widget&utm_medium=JSWidget&utm_source=ProviderWebsite&widget=false"
+            className="btn btn-primary mt-2 mr-1"
+            target="_blank">Make an appointment with Dr. Yagerman</a>
+          
         </React.Fragment>
       ),
       pathItems: [

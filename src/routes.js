@@ -16,6 +16,7 @@ const ConditionsMedical = React.lazy(() => import('./pages/Home/ConditionsProced
 const OurPractice = React.lazy(() => import('./pages/Home/OurPractice/OurPractice'));
 const Arteaga = React.lazy(() => import('./pages/Home/OurPractice/Arteaga'));
 const Asrani = React.lazy(() => import('./pages/Home/OurPractice/Asrani'));
+const Donnelley = React.lazy(() => import('./pages/Home/OurPractice/Donnelley'));
 const Cossman = React.lazy(() => import('./pages/Home/OurPractice/Cossman'));
 const Travis = React.lazy(() => import('./pages/Home/OurPractice/Travis'));
 const Yagerman = React.lazy(() => import('./pages/Home/OurPractice/Yagerman'));
@@ -124,6 +125,7 @@ const routes = [
     { path: '/debbie-arteaga', component: Arteaga },
     { path: '/falguni-asrani', component: Asrani },
     { path: '/jack-cossman', component: Cossman },
+    { path: '/naomi-donnelley', component: Donnelley },
     { path: '/lisa-travis', component: Travis },
     { path: '/sarah-yagerman', component: Yagerman },
 

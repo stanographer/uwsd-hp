@@ -64,6 +64,9 @@ class Cossman extends React.Component {
             favorite, although Great Sand Dunes in Colorado was spectacular,
             too.
           </p>
+          <a href="https://qwell.com/dermatology/jack-cossman-md"
+            className="btn btn-primary mt-2 mr-1"
+            target="_blank">Make an appointment with Dr. Cossman</a>
         </React.Fragment>
       ),
       pathItems: [

@@ -88,7 +88,7 @@ class OurPractice extends Component {
           imageTiny: DonnelleyTiny,
           name: "Dr. Naomi Donnelley",
           designation: "Board-Certified Dermatologist",
-          link: "/naomi-donnelly",
+          link: "/naomi-donnelley",
         },
       ],
       assistants: [

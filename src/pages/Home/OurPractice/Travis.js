@@ -66,6 +66,9 @@ class Travis extends React.Component {
             Travis loves to travel and spend time with her husband, three kids,
             and their adorable Labradoodle puppy, Hudson.
           </p>
+          <a href="https://qwell.com/dermatology/lisa-travis-md"
+            className="btn btn-primary mt-2 mr-1"
+            target="_blank">Make an appointment with Dr. Travis</a>
         </React.Fragment>
       ),
       pathItems: [

@@ -43,6 +43,9 @@ class Arteaga extends React.Component {
             medical and cosmetic aesthetics when providing care for her
             patients.
           </p>
+          <a href="https://qwell.com/specialties/search?providerId=2e1b2776-f9e3-4e11-873d-c7471f92a7b2"
+            className="btn btn-primary mt-2 mr-1"
+            target="_blank">Make an appointment with Debbie Arteaga</a>
         </React.Fragment>
       ),
       pathItems: [
