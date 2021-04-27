@@ -14,6 +14,8 @@ import bgTiny from "../../../images/stock/physicians_bg_tiny.jpg";
 import Cossman from "../../../images/team/avatars/jack-cossman.jpg";
 import Travis from "../../../images/team/avatars/lisa-travis.jpg";
 import Asrani from "../../../images/team/avatars/falguni-asrani.jpg";
+import Donnelley from "../../../images/team/avatars/naomi-donnelley.jpg";
+import DonnelleyTiny from "../../../images/team/avatars/naomi-donnelley-tiny.jpg";
 import Yagerman from "../../../images/team/avatars/sarah-yagerman.jpg";
 import Arteaga from "../../../images/team/avatars/debbie-arteaga.jpg";
 import CossmanTiny from "../../../images/team/avatars/jack-cossman-tiny.jpg";
@@ -79,6 +81,14 @@ class OurPractice extends Component {
           name: "Dr. Sarah Yagerman",
           designation: "Mohs Surgeon",
           link: "/sarah-yagerman",
+        },
+        {
+          id: 5,
+          image: Donnelley,
+          imageTiny: DonnelleyTiny,
+          name: "Dr. Naomi Donnelley",
+          designation: "Board-Certified Dermatologist",
+          link: "/naomi-donnelly",
         },
       ],
       assistants: [
