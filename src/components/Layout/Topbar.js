@@ -10,158 +10,52 @@ class Topbar extends Component {
       isOpen: false,
       navLinks: [
         {
-          id: 2,
+          id: 0,
           title: "Medical",
           link: "/#",
           isOpenSubMenu: false,
-          isMegaMenu: true,
+          isMegaMenu: false,
           child: [
             {
-              title: "Acne",
-              link: "/acne",
-              description: "Topical and surgical acne solutions.",
+              title: "Conditions We Treat",
+              link: "/conditions-medical",
+              description: "Medical conditions we treat.",
             },
             {
-              title: "Eczema",
-              link: "/eczema",
-              description: "Inflamed, itchy, red, cracked, and rough skin.",
-            },
-            {
-              title: "Psoriasis",
-              link: "/psoriasis",
+              title: "Devices",
+              link: "/devices-medical",
               description:
-                "Skin cells build up and form scales and itchy, dry patches.",
-            },
-            {
-              title: "Vitiligo",
-              link: "/vitiligo",
-              description: "Here is a description about vitiligo",
-            },
-            {
-              title: "Alopecia",
-              link: "/alopecia",
-              description: "Here is a description about alopecia.",
+                "Devices we use to treat medical conditions.",
             },
             {
               title: "Mohs Surgery",
               link: "/mohs-surgery",
               description: "MOHS.",
             },
-            {
-              title: "Warts",
-              link: "/warts",
-              description: "Something here about warts.",
-            },
-          ],
-          child2: [
-            {
-              title: "Skin Cancer Screening",
-              link: "/skin-cancer-screening",
-              description: "Latest cancer screening techniques.",
-            },
-            {
-              title: "Rosacea",
-              link: "/rosacea",
-              description: "Stuff about rosacea.",
-            },
-            {
-              title: "Moles",
-              link: "/moles",
-              description: "Something about moles here.",
-            },
-            {
-              title: "Phototherapy NB-UVB",
-              link: "/phototherapy",
-              description: "Revolutionary treatment.",
-            },
-            {
-              title: "PDT - Blue & Red Light Treatment",
-              link: "/pdt",
-              description: "Sounds really fancy.",
-            },
           ],
         },
         {
-          id: 3,
+          id: 1,
           title: "Cosmetic",
           link: "/#",
           isOpenSubMenu: false,
-          isMegaMenu: true,
+          isMegaMenu: false,
           child: [
             {
-              title: "Botox & Dysport",
-              link: "/botox-and-dysport",
+              title: "Conditions We Treat",
+              link: "/conditions-cosmetic",
               description:
-                "Makes it impossible for you to show emotion on your face.",
+                "Conditions and procedures we treat.",
             },
             {
-              title: "Laser treatments - IPL",
-              link: "/laser-treatments",
-              description: "We have the most advanced in laser treatment.",
-            },
-            {
-              title: "Laser Hair Removal",
-              link: "/laser-hair-removal",
-              description: "Remove all that gross hair and get yourself a man.",
-            },
-            {
-              title: "Fillers",
-              link: "/fillers",
-              description: "Fill in those wrinkles!",
-            },
-            {
-              title: "Body Contouring & Sculpting",
-              link: "/body-contouring-and-sculpting",
-              description: "Something about body conturing here.",
-            },
-            {
-              title: "Microneedling",
-              link: "/microneedling",
-              description:
-                "Got scars? Microneedling may be the answer for you.",
-            },
-            {
-              title: "PRP",
-              link: "/prp",
-              description: "I don't even know what this is",
-            },
-          ],
-          child2: [
-            {
-              title: "Acne Scars",
-              link: "/acne-scars",
-              description: "Let's annihilate those scars.",
-            },
-            {
-              title: "Sculptra",
-              link: "/sculptra",
-              description: "Another thing I do not know.",
-            },
-            {
-              title: "Kybella",
-              link: "/kybella",
-              description: "Probably an advanced filler of some type.",
-            },
-            {
-              title: "Nova Threads",
-              link: "/nova-threads",
-              description: "No clue what this is.",
-            },
-            {
-              title: "Chemical Peels",
-              link: "/chemical-peels",
-              description:
-                "Don't ever put anything higher than 30% on your face unless you want it to melt.",
-            },
-            {
-              title: "Facials",
-              link: "/facials",
-              description: "I could use one of these right now.",
+              title: "Devices & Lasers",
+              link: "/devices-cosmetic",
+              description: "Devices we use to treat cosmetic conditions.",
             },
           ],
         },
         {
-          id: 5,
+          id: 2,
           title: "Our Practice",
           link: "/our-practice",
         },

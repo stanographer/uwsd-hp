@@ -60,7 +60,6 @@ class Index extends Component {
       imageTiny,
       pathItems,
       title,
-      treatmentDescription,
       treatments,
     } = this.state.data;
     return (
@@ -110,7 +109,7 @@ class Index extends Component {
             <section className="bg-light section">
               <Container>
                 <SectionTitle title="Our Treatment Options" />
-                {treatments.map((treatment, key) => (
+                {treatments && treatments.map((treatment, key) => (
                   <React.Fragment>
                     <div className="faq-container mb-5" key={key}>
                       <h4 className="question darker-purple">
@@ -138,6 +137,31 @@ class Index extends Component {
       </React.Fragment>
     );
   }
+}
+
+function ProcedureList(props) {
+  return (
+    <React.Fragment>
+      {props.procedures
+        .filter(item => item.category === 'injectables')
+        .map((procedure, key) => (
+          <Col md="4" xs="12">
+            <Link to={procedure.link}>
+              <div className="faq-container" key={key}>
+              {/* <i className="mdi mdi-arrow-right-bold-circle-outline text-primary mr-2 h4"></i> */}
+                <h4 className="question">
+                  {" "}
+                  {procedure.title}
+                </h4>
+                <p className="answer text-muted ml-lg-4 pl-lg-3 mb-3">
+                  {procedure.description}
+                </p>
+              </div>
+            </Link>
+          </Col>
+        ))}
+    </React.Fragment>
+  );
 }
 
 export default Index;

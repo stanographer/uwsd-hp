@@ -189,7 +189,7 @@ class Procedures extends Component {
           title: "Psoriasis",
           link: "/psoriasis",
           // description:
-            // "Skin cells build up and form scales and itchy, dry patches.",
+          // "Skin cells build up and form scales and itchy, dry patches.",
           category: "Medical",
         },
         {
@@ -295,7 +295,7 @@ class Procedures extends Component {
           title: "Botox & Dysport",
           link: "/botox-and-dysport",
           // description:
-            // "Makes it impossible for you to show emotion on your face.",
+          // "Makes it impossible for you to show emotion on your face.",
           category: "Cosmetic",
         },
         {
@@ -362,7 +362,7 @@ class Procedures extends Component {
           title: "Chemical Peels",
           link: "/chemical-peels",
           // description:
-            // "Don't put 100% TCA on your face unless you want it to melt.",
+          // "Don't put 100% TCA on your face unless you want it to melt.",
           category: "Cosmetic",
         },
         {
@@ -393,10 +393,7 @@ class Procedures extends Component {
       <React.Fragment>
         <section className="section">
           <Container>
-            <SectionTitle
-              isLeft={false}
-              title="Conditions &amp; Procedures"
-            />
+            <SectionTitle isLeft={false} title="Conditions &amp; Procedures" />
 
             <Row className="my-4">
               <ul
@@ -469,8 +466,9 @@ class Procedures extends Component {
                   <Col md="4" xs="12">
                     <Link to={procedure.link}>
                       <div className="faq-container" key={key}>
+                      {/* <i className="mdi mdi-arrow-right-bold-circle-outline text-primary mr-2 h4"></i> */}
                         <h4 className="question">
-                          <i className="mdi mdi-arrow-right-bold-circle-outline text-primary mr-2 h4"></i>{" "}
+                          {" "}
                           {procedure.title}
                         </h4>
                         <p className="answer text-muted ml-lg-4 pl-lg-3 mb-3">
@@ -480,6 +478,7 @@ class Procedures extends Component {
                     </Link>
                   </Col>
                 ))}
+
             </Row>
           </Container>
         </section>

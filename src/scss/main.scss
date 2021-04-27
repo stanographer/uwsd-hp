@@ -5,6 +5,10 @@ $darker-purple: #452d42;
 $light-gray: rgb(242, 242, 242);
 $light-pink: #e3cae0;
 
+.row {
+  margin-left: unset !important;
+}
+
 a {
   color: $darker-purple;
 }
