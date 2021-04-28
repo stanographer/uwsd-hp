@@ -34,6 +34,10 @@ a {
   }
 }
 
+.mb-12 {
+  margin-bottom: 3.5em;
+}
+
 .btn-outline-primary {
   &:active {
     background-color: $darker-purple !important;

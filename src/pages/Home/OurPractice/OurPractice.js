@@ -227,10 +227,10 @@ class OurPractice extends Component {
               isLeft={false}
               desc={
                 <a
-                  href="/new-patient.pdf"
+                  href="https://forms.gle/zMwpAH5wKdPRmfax9"
                   className="btn btn-primary mt-2 mr-1"
                 >
-                  Download New Patient Form
+                  Fill Out New Patient Form
                 </a>
               }
             />

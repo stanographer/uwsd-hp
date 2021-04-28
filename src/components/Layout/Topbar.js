@@ -42,10 +42,10 @@ class Topbar extends Component {
           isMegaMenu: false,
           child: [
             {
-              title: "Conditions We Treat",
+              title: "Cosmetic Treatments",
               link: "/conditions-cosmetic",
               description:
-                "Conditions and procedures we treat.",
+                "Cosmetic treatments.",
             },
             {
               title: "Devices & Lasers",

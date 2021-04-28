@@ -12,7 +12,7 @@ class ConditionsCosmetic extends React.Component {
     super(props);
 
     this.state = {
-      title: "Cosmetic Conditions & Treatments",
+      title: "Cosmetic Treatments",
       plural: true,
       bg,
       bgTiny,
@@ -27,11 +27,12 @@ class ConditionsCosmetic extends React.Component {
         { id: 2, name: "Cosmetic", link: "#" },
         {
           id: 3,
-          name: "Conditions & Treatments",
+          name: "Cosmetic Treatments",
           link: "/cosmetic-conditions-procedures",
         },
       ],
       signs: [],
+      sectionTitle: "We'll keep you in tip-top shape",
       procedures: [
         {
           title: "Botox & Dysport",

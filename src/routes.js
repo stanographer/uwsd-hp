@@ -11,6 +11,8 @@ const MohsSurgery = React.lazy(() => import('./pages/Home/Services/MohsSurgery')
 const PageContactDetail = React.lazy(() => import('./pages/Pages/Contact/PageContactDetail'));
 const ConditionsCosmetic = React.lazy(() => import('./pages/Home/ConditionsProcedures/ConditionsCosmetic'));
 const ConditionsMedical = React.lazy(() => import('./pages/Home/ConditionsProcedures/ConditionsMedical'));
+const DevicesCosmetic = React.lazy(() => import('./pages/Home/ConditionsProcedures/DevicesCosmetic'));
+const DevicesMedical = React.lazy(() => import('./pages/Home/ConditionsProcedures/DevicesMedical'));
 
 // Physicians
 const OurPractice = React.lazy(() => import('./pages/Home/OurPractice/OurPractice'));
@@ -117,8 +119,8 @@ const routes = [
     { path: '/mohs-surgery', component: MohsSurgery },
     { path: '/conditions-cosmetic', component: ConditionsCosmetic },
     { path: '/conditions-medical', component: ConditionsMedical },
-    { path: '/devices-cosmetic', component: Root },
-    { path: '/devices-medical', component: Root },
+    { path: '/devices-cosmetic', component: DevicesCosmetic },
+    { path: '/devices-medical', component: DevicesMedical },
 
     // Physicians
     { path: '/our-practice', component: OurPractice },

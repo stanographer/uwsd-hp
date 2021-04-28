@@ -56,12 +56,13 @@ class Index extends Component {
       bgTiny,
       bgPositioning,
       description,
+      devices,
       image,
       imageTiny,
       pathItems,
+      procedures,
+      sectionTitle,
       title,
-      treatmentDescription,
-      treatments,
     } = this.state.data;
     return (
       <React.Fragment>
@@ -81,19 +82,27 @@ class Index extends Component {
                   image={{
                     src: image,
                     placeholderSrc: imageTiny,
-                    alt: "UWSD Staff",
+                    alt: "header image",
                     height: "100%",
                     className: "img-fluid rounded img-fluid mx-auto d-block",
-                    alt: "Image of Acne",
                   }}
                 />
               </Col>
 
               <Col lg="8" md="7" xs="12" className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                 <div className="ml-lg-4 mb-3">
-                  <h4 className="mb-4">About {title}</h4>
+                  <h4 className="mb-4">{sectionTitle}</h4>
                   <div className="mb-5 text-muted">{description}</div>
                   <div className="mt-4">
+                    {devices && (
+                      <section>
+                        <ul className="mb-12">
+                        {devices.map((device, key) => (
+                          <li key={key}>{device.title}</li>
+                        ))}
+                      </ul>
+                      </section>
+                    )}
                     <Link to="/page-job-apply" className="btn btn-primary">
                       Contact Us Today
                     </Link>
@@ -105,35 +114,18 @@ class Index extends Component {
           </Container>
         </section>
 
-        {treatments && (
-          <>
-            <section className="bg-light section">
-              <Container>
-                <SectionTitle title="Our Treatment Options" />
-                {treatments && treatments.map((treatment, key) => (
-                  <React.Fragment>
-                    <div className="faq-container mb-5" key={key}>
-                      <h4 className="question darker-purple">
-                        {treatment.title}
-                      </h4>
-                      <p className="answer text-muted ml-lg-4 pl-lg-3 mb-3 mt-4">
-                        <p className="dark-purple">
-                          <em>
-                            {treatment.sectionHeader
-                              ? `What ${treatment.plural ? "are" : "is"} ${
-                                  treatment.title
-                                }?`
-                              : null}
-                          </em>
-                        </p>
-                        {treatment.description}
-                      </p>
-                    </div>
-                  </React.Fragment>
+        {procedures && (
+          <section className="bg-light section">
+            <Container>
+              <Row className="flex">
+                {procedures.map((procedure, key) => (
+                  <Col xs={12} sm={4} className="mb-4">
+                    {procedure.title}
+                  </Col>
                 ))}
-              </Container>
-            </section>
-          </>
+              </Row>
+            </Container>
+          </section>
         )}
       </React.Fragment>
     );
@@ -144,16 +136,13 @@ function ProcedureList(props) {
   return (
     <React.Fragment>
       {props.procedures
-        .filter(item => item.category === 'injectables')
+        .filter((item) => item.category === "injectables")
         .map((procedure, key) => (
           <Col md="4" xs="12">
             <Link to={procedure.link}>
               <div className="faq-container" key={key}>
-              {/* <i className="mdi mdi-arrow-right-bold-circle-outline text-primary mr-2 h4"></i> */}
-                <h4 className="question">
-                  {" "}
-                  {procedure.title}
-                </h4>
+                {/* <i className="mdi mdi-arrow-right-bold-circle-outline text-primary mr-2 h4"></i> */}
+                <h4 className="question"> {procedure.title}</h4>
                 <p className="answer text-muted ml-lg-4 pl-lg-3 mb-3">
                   {procedure.description}
                 </p>

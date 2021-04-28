@@ -2,8 +2,8 @@ import React from "react";
 import Index from "./Index";
 import bg from "../../../images/office/office-1-cut.jpg";
 import bgTiny from "../../../images/office/office-1-cut-tiny.jpg";
-import image from "../../../images/stock/mohs_surgery_bg.jpg";
-import imageTiny from "../../../images/stock/mohs_surgery_bg_tiny.jpg";
+import image from "../../../images/stock/mohs-image.jpg";
+import imageTiny from "../../../images/stock/mohs-image-tiny.jpg";
 
 class MohsSurgery extends React.Component {
   constructor(props) {
@@ -15,8 +15,8 @@ class MohsSurgery extends React.Component {
       plural: false,
       bg,
       bgTiny,
-      image: null,
-      imageTiny: null,
+      image,
+      imageTiny,
       description:
         "Mohs surgery is considered the most effective technique for treating many basal cell carcinomas (BCCs) and squamous cell carcinomas (SCCs), the two most common types of skin cancer. Sometimes called Mohs micrographic surgery, the procedure is done in stages, including lab work, while the patient waits. This allows the removal of all cancerous cells for the highest cure rate while sparing healthy tissue and leaving the smallest possible scar.",
       treatmentDescription: "",
