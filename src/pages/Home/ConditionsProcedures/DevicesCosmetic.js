@@ -30,11 +30,12 @@ class ConditionsCosmetic extends React.Component {
       signs: [],
       sectionTitle: "Modern. Effective. Proven.",
       devices: [
-        {title: "SculpSure®", link: "/"},
-        {title: "LightSheer®", link: "/"},
-        {title: "DESIRE™ Icon™ 1540 Fractional Laser", link: "/"},
+        {title: "Icon™ 1540 Fractional Laser", link: "/"},
         {title: "Icon™ Max G™ IPL (Intense Pulsed Light)", link: "/"},
+        {title: "LightSheer®", link: "/"},
+        {title: "Omnilux Revive™ Light Therapy", link: "/"},
         {title: "SkinPen® Precision Microneedling", link: "/"},
+        {title: "SculpSure®", link: "/"},
       ],
     };
   }

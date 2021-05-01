@@ -146,10 +146,25 @@ class MeetThePhysicians extends Component {
                       <h4 className="title font-weight-bold mb-0">Text Us</h4>
                       <Link
                         to="#"
-                        onClick={this.callOffice}
                         className="text-primary h6"
                       >
                         +1 833 656 0677
+                      </Link>
+                      <br />
+                    </div>
+                  </div>
+
+                  <div className="contact-detail mt-3">
+                    <div className="icon mt-3 float-left">
+                      <i className="mdi mdi-comment-question text-muted mdi-36px mr-3"></i>
+                    </div>
+                    <div className="content mt-3 overflow-hidden d-block">
+                      <h4 className="title font-weight-bold mb-0">Billing Questions</h4>
+                      <Link
+                        to="#"
+                        className="text-primary h6"
+                      >
+                        +1 718 306 9769
                       </Link>
                       <br />
                     </div>

@@ -30,7 +30,7 @@ class ConditionsCosmetic extends React.Component {
       signs: [],
       sectionTitle: "Modern. Effective. Proven.",
       devices: [
-        {title: "BLU-U® Blue Light Photodynamic Therapy", link: "/"},
+        {title: "Omnilux Blue™ Light Therapy", link: "/"},
         {title: "Phototherapy NB-UVB", link: "/"}
       ],
     };

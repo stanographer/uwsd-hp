@@ -35,88 +35,6 @@ class ConditionsMedical extends React.Component {
       sectionTitle: <React.Fragment>Personalized care for every<span className="text-primary">body</span></React.Fragment>,
       procedures: [
         {
-          title: "Botox & Dysport",
-          link: "/botox-and-dysport",
-          // description:
-          // "Makes it impossible for you to show emotion on your face.",
-          category: "Injectables",
-        },
-        {
-          title: "Fillers",
-          link: "/fillers",
-          // description: "Fill in those wrinkles!",
-          category: "Injectables",
-        },
-        {
-          title: "Laser treatments - IPL",
-          link: "/laser-treatments",
-          // description: "We have the most advanced in laser treatment.",
-          category: "Cosmetic",
-        },
-        {
-          title: "Laser Hair Removal",
-          link: "/laser-hair-removal",
-          // description: "Remove all that gross hair and get yourself a man.",
-          category: "Cosmetic",
-        },
-        {
-          title: "Body Contouring & Sculpting",
-          link: "/body-contouring-and-sculpting",
-          // description: "Something about body conturing here.",
-          category: "Cosmetic",
-        },
-        {
-          title: "Microneedling",
-          link: "/microneedling",
-          // description: "Got scars? Microneedling may be the answer for you.",
-          category: "Cosmetic",
-        },
-        {
-          title: "PRP",
-          link: "/prp",
-          // description: "I don't even know what this is",
-          category: "Cosmetic",
-        },
-        {
-          title: "Acne Scars",
-          link: "/acne-scars",
-          // description: "Let's annihilate those scars.",
-          category: "Cosmetic",
-        },
-        {
-          title: "Sculptra",
-          link: "/sculptra",
-          // description: "Another thing I do not know.",
-          category: "Injectables",
-        },
-        {
-          title: "Kybella",
-          link: "/kybella",
-          // description: "Probably an advanced filler of some type.",
-          category: "Injectables",
-        },
-        {
-          title: "Nova Threads",
-          link: "/nova-threads",
-          // description: "No clue what this is.",
-          category: "Cosmetic",
-        },
-        {
-          title: "Chemical Peels",
-          link: "/chemical-peels",
-          // description:
-          // "Don't put 100% TCA on your face unless you want it to melt.",
-          category: "Cosmetic",
-        },
-        {
-          title: "Facials",
-          link: "/facials",
-          // description: "I could use one of these right now.",
-          category: "Cosmetic",
-        },
-      ],
-      procedures: [
-        {
           title: "Acne",
           // link: "/acne",
           // description: "Topical and surgical acne solutions.",
@@ -329,6 +247,10 @@ class ConditionsMedical extends React.Component {
           category: "Medical",
         },
         {
+          title: "Seborrheic Keratoris",
+          category: "Medical",
+        },
+        {
           title: "Shingles",
           category: "Medical",
         },
@@ -349,16 +271,12 @@ class ConditionsMedical extends React.Component {
           category: "Medical",
         },
         {
-          title: "Telangectasias",
+          title: "Telangiectasia",
           category: "Medical",
         },
 
         {
           title: "Tinea Versicolor",
-          category: "Medical",
-        },
-        {
-          title: "Telangectasias",
           category: "Medical",
         },
         {

@@ -17,6 +17,9 @@ class CovidProtocols extends React.Component {
       bgPositioning: "center center",
       description: (
         <>
+          <a href="https://forms.gle/5H5hvDBGbQr6F6wi9" target="_blank" className="btn btn-primary mb-10">
+            Fill out our Covid-19 Screening Form
+          </a>
           <p>
             While many things have changed since the start of the Covid-19
             outbreak, we are still committed to your safety and to providing
@@ -34,10 +37,9 @@ class CovidProtocols extends React.Component {
             </li>
             <li>
               All patients will be required to answer screening questions{" "}
-              <strong>prior</strong>{" "}
-              to their visit and will be given a temperature check with a
-              no-contact thermometer before entering the office. Our staff will
-              be following the same protocol.
+              <strong>prior</strong> to their visit and will be given a
+              temperature check with a no-contact thermometer before entering
+              the office. Our staff will be following the same protocol.
             </li>
             <li>
               All doctors and staff will be wearing appropriate protective

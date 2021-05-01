@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "reactstrap";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
-import postscribe from "postscribe";
+import { Link } from "react-router-dom";
 
 // Import Generic Components
 import Location from "./Location";
@@ -51,7 +51,7 @@ class IndexMain extends Component {
       <React.Fragment>
         {/* Home Section */}
         <Section />
-        
+
         <div className="position-relative">
           <div className="shape overflow-hidden text-white">
             <svg
@@ -75,7 +75,34 @@ class IndexMain extends Component {
         <section className="pt-5 pb-5 border-bottom">
           <SectionTitle
             title="Important Covid-19 Updates"
-            desc="While many things have changed since the start of the COVID-19 outbreak, we are still committed to your safety and to providing quality care. We understand that you may have some concerns regarding returning to a doctor's office at this time. Rest assured that we are implementing strict safety procedures and following infection control recommendations advised by the CDC to protect both our patients and staff."
+            desc={
+              <>
+                <p>
+                  While many things have changed since the start of the COVID-19
+                  outbreak, we are still committed to your safety and to
+                  providing quality care. We understand that you may have some
+                  concerns regarding returning to a doctor's office at this
+                  time. Rest assured that we are implementing strict safety
+                  procedures and following infection control recommendations
+                  advised by the CDC to protect both our patients and staff."
+                </p>
+
+                <p>
+                  <strong>NOTE: All patients <em>must</em> fill out our
+                  Covid-19 Screening Form prior to their visit.
+                  <br />
+                  Click{" "}
+                  <a
+                    href="https://forms.gle/5H5hvDBGbQr6F6wi9"
+                    target="_blank"
+                    className="underline"
+                  >
+                    here
+                  </a>{" "}
+                  to access the form.</strong>
+                </p>
+              </>
+            }
           />
           <Row className="justify-content-center">
             <a href="/covid-protocols" className="btn btn-primary mt-2 mr-1">

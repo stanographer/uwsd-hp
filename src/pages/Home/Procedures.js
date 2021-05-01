@@ -223,6 +223,10 @@ class Procedures extends Component {
           category: "Medical",
         },
         {
+          title: "Seborrheic Keratoris",
+          category: "Medical",
+        },
+        {
           title: "Shingles",
           category: "Medical",
         },
@@ -292,83 +296,107 @@ class Procedures extends Component {
           category: "Medical",
         },
         {
-          title: "Botox & Dysport",
-          link: "/botox-and-dysport",
-          // description:
-          // "Makes it impossible for you to show emotion on your face.",
+          title: "Acne Scarring",
+          category: "Cosmetic",
+        },
+        {
+          title: "Botox®",
+          category: "Cosmetic",
+        },
+        {
+          title: "Brown Spots / Age",
+          category: "Cosmetic",
+        },
+        {
+          title: "Cosmetic Mole Removal",
+          category: "Cosmetic",
+        },
+        {
+          title: "Facial Redness",
+          category: "Cosmetic",
+        },
+        {
+          title: "Facial Veins",
           category: "Cosmetic",
         },
         {
           title: "Fillers",
-          link: "/fillers",
-          // description: "Fill in those wrinkles!",
           category: "Cosmetic",
         },
         {
-          title: "Laser treatments - IPL",
-          link: "/laser-treatments",
-          // description: "We have the most advanced in laser treatment.",
+          title: "Juvederm®",
           category: "Cosmetic",
         },
         {
-          title: "Laser Hair Removal",
-          link: "/laser-hair-removal",
-          // description: "Remove all that gross hair and get yourself a man.",
-          category: "Cosmetic",
-        },
-        {
-          title: "Body Contouring & Sculpting",
-          link: "/body-contouring-and-sculpting",
-          // description: "Something about body conturing here.",
+          title: "Kybella®",
           category: "Cosmetic",
         },
         {
           title: "Microneedling",
-          link: "/microneedling",
-          // description: "Got scars? Microneedling may be the answer for you.",
+          category: "Cosmetic",
+        },
+        {
+          title: "Novathreads",
+          category: "Cosmetic",
+        },
+        {
+          title: "Photorejuvenation",
           category: "Cosmetic",
         },
         {
           title: "PRP",
-          link: "/prp",
-          // description: "I don't even know what this is",
           category: "Cosmetic",
         },
         {
-          title: "Acne Scars",
-          link: "/acne-scars",
-          // description: "Let's annihilate those scars.",
+          title: "Restylane®",
           category: "Cosmetic",
+        },
+        {
+          title: "Restylane Lift®",
+          category: "Cosmetic",
+        },
+        {
+          title: "Restylane Silk®",
+          category: "Cosmetic",
+        },
+        {
+          title: "Rosacea",
+          category: "Cosmetic",
+        },
+        {
+          title: "Scars",
+          category: "Cosmetic",
+        },
+        {
+          title: "Sclerotherapy / Leg Veins",
+          category: "Cosmetic",
+        },
+        {
+          title: "SculpSure®",
+          category: "Injectables",
         },
         {
           title: "Sculptra",
-          link: "/sculptra",
-          // description: "Another thing I do not know.",
           category: "Cosmetic",
         },
         {
-          title: "Kybella",
-          link: "/kybella",
-          // description: "Probably an advanced filler of some type.",
+          title: "Stretch Marks",
           category: "Cosmetic",
         },
         {
-          title: "Nova Threads",
-          link: "/nova-threads",
-          // description: "No clue what this is.",
+          title: "Sun Spots",
           category: "Cosmetic",
         },
         {
-          title: "Chemical Peels",
-          link: "/chemical-peels",
-          // description:
-          // "Don't put 100% TCA on your face unless you want it to melt.",
+          title: "Volbella®",
           category: "Cosmetic",
         },
         {
-          title: "Facials",
-          link: "/facials",
-          // description: "I could use one of these right now.",
+          title: "Vollure®",
+          category: "Cosmetic",
+        },
+        {
+          title: "Voluma®",
           category: "Cosmetic",
         },
         {
