@@ -28,14 +28,11 @@ class Travis extends React.Component {
           <p>
             Dr. Lisa Travis is a board-certified dermatologist with a decade of
             experience making New Yorkers look and feel better in their own
-            skin.
-          </p>
-          <p>
-            Dr. Travis was selected in 2013 and again in 2014 for the New York
-            Times Magazine’s list of New York “Super Doctors”, which is limited
-            to five percent of the region’s active physicians. This honor is
-            based on a survey of other physicians in the NY area as to whom they
-            would choose for their own medical care.
+            skin. Dr. Travis was selected in 2013-2014 and 2018-2021 for the New
+            York Times Magazine’s list of New York “Super Doctors”, which is
+            limited to five percent of the region’s active physicians. This
+            honor is based on a survey of other physicians in the NY area as to
+            whom they would choose for their own medical care.
           </p>
           <p>
             Dr. Travis came to dermatology from an artistic background, having
@@ -66,9 +63,13 @@ class Travis extends React.Component {
             Travis loves to travel and spend time with her husband, three kids,
             and their adorable Labradoodle puppy, Hudson.
           </p>
-          <a href="https://qwell.com/dermatology/lisa-travis-md"
+          <a
+            href="https://qwell.com/dermatology/lisa-travis-md"
             className="btn btn-primary mt-2 mr-1"
-            target="_blank">Make an appointment with Dr. Travis</a>
+            target="_blank"
+          >
+            Make an appointment with Dr. Travis
+          </a>
         </React.Fragment>
       ),
       pathItems: [
