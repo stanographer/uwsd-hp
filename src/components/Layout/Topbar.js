@@ -22,7 +22,7 @@ class Topbar extends Component {
               description: "Medical conditions we treat.",
             },
             {
-              title: "Devices",
+              title: "Medical Devices",
               link: "/devices-medical",
               description:
                 "Devices we use to treat medical conditions.",

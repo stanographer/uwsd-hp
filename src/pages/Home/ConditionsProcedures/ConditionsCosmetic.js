@@ -47,7 +47,15 @@ class ConditionsCosmetic extends React.Component {
           category: "Cosmetic",
         },
         {
+          title: "Chemical Peels",
+          category: "Cosmetic",
+        },
+        {
           title: "Cosmetic Mole Removal",
+          category: "Cosmetic",
+        },
+        {
+          title: "Facials",
           category: "Cosmetic",
         },
         {
@@ -91,7 +99,7 @@ class ConditionsCosmetic extends React.Component {
           category: "Cosmetic",
         },
         {
-          title: "Restylane Lift®",
+          title: "Restylane Lyft®",
           category: "Cosmetic",
         },
         {

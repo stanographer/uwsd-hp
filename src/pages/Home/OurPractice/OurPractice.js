@@ -258,10 +258,10 @@ class OurPractice extends Component {
                         Spanish
                       </li>
                     </ul>
-                    <h6>Billing Questions</h6>
+                    <h6>Billing Questions / To Pay Your Bill</h6>
                     <p>
                       Please call or email:
-                      <p className="text-muted mt-4">
+                      <p className="text-muted">
                         +1 718 306 9769
                         <br />
                         <a href="mailto:angela@adobillingservices.com">

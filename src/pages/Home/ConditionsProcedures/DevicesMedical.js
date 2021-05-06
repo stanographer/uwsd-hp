@@ -1,9 +1,7 @@
 import React from "react";
 import Index from "./Index";
-import { Col, Row } from "reactstrap";
-import { Link } from "react-router-dom";
-import image from "../../../images/office/blu-u.jpg";
-import imageTiny from "../../../images/office/blu-u.jpg";
+import image from "../../../images/office/phototherapy.jpg";
+import imageTiny from "../../../images/office/phototherapy-tiny.jpg";
 import bg from "../../../images/stock/devices-medical.jpg";
 import bgTiny from "../../../images/stock/devices-medical-tiny.jpg";
 

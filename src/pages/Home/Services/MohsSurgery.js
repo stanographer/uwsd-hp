@@ -2,8 +2,8 @@ import React from "react";
 import Index from "./Index";
 import bg from "../../../images/office/office-1-cut.jpg";
 import bgTiny from "../../../images/office/office-1-cut-tiny.jpg";
-import image from "../../../images/stock/mohs-image.jpg";
-import imageTiny from "../../../images/stock/mohs-image-tiny.jpg";
+import image from "../../../images/office/mohs.jpg";
+import imageTiny from "../../../images/office/mohs-tiny.jpg";
 
 class MohsSurgery extends React.Component {
   constructor(props) {

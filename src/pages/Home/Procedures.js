@@ -278,12 +278,6 @@ class Procedures extends Component {
           category: "Medical",
         },
         {
-          title: "Moles",
-          link: "/moles",
-          // description: "Something about moles here.",
-          category: "Medical",
-        },
-        {
           title: "Phototherapy NB-UVB",
           link: "/phototherapy",
           // description: "Revolutionary treatment.",
@@ -308,7 +302,15 @@ class Procedures extends Component {
           category: "Cosmetic",
         },
         {
+          title: "Chemical Peels",
+          category: "Cosmetic",
+        },
+        {
           title: "Cosmetic Mole Removal",
+          category: "Cosmetic",
+        },
+        {
+          title: "Facials",
           category: "Cosmetic",
         },
         {
@@ -352,7 +354,7 @@ class Procedures extends Component {
           category: "Cosmetic",
         },
         {
-          title: "Restylane Lift®",
+          title: "Restylane Lyft®",
           category: "Cosmetic",
         },
         {
