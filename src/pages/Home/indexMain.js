@@ -10,7 +10,6 @@ import Section from "./section";
 import SectionTitle from "../../components/Shared/section-title";
 import Partners from "../../components/Shared/Partners";
 import MeetThePhysicians from "./MeetThePhysicians";
-import Testi from "./Testi";
 import Procedures from "./Procedures";
 
 class IndexMain extends Component {
@@ -88,18 +87,20 @@ class IndexMain extends Component {
                 </p>
 
                 <p>
-                  <strong>NOTE: All patients <em>must</em> fill out our
-                  Covid-19 Screening Form prior to their visit.
-                  <br />
-                  Click{" "}
-                  <a
-                    href="https://forms.gle/5H5hvDBGbQr6F6wi9"
-                    target="_blank"
-                    className="underline"
-                  >
-                    here
-                  </a>{" "}
-                  to access the form.</strong>
+                  <strong>
+                    NOTE: All patients <em>must</em> fill out our Covid-19
+                    Screening Form prior to their visit.
+                    <br />
+                    Click{" "}
+                    <a
+                      href="https://forms.gle/5H5hvDBGbQr6F6wi9"
+                      target="_blank"
+                      className="underline"
+                    >
+                      here
+                    </a>{" "}
+                    to access the form.
+                  </strong>
                 </p>
               </>
             }
@@ -110,12 +111,10 @@ class IndexMain extends Component {
             </a>
           </Row>
         </section>
-        <MeetThePhysicians />
-        <Procedures />
-        <Location />
         <LazyLoadComponent>
-          {/* Testi */}
-          <Testi />
+          <MeetThePhysicians />
+          <Procedures />
+          <Location />
         </LazyLoadComponent>
 
         <div className="position-relative">
