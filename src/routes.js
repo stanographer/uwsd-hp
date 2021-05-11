@@ -15,7 +15,7 @@ const DevicesCosmetic = React.lazy(() => import('./pages/Home/ConditionsProcedur
 const DevicesMedical = React.lazy(() => import('./pages/Home/ConditionsProcedures/DevicesMedical'));
 
 // Physicians
-const OurPractice = React.lazy(() => import('./pages/Home/OurPractice/OurPractice'));
+const AboutUs = React.lazy(() => import('./pages/Home/OurPractice/AboutUs'));
 const Arteaga = React.lazy(() => import('./pages/Home/OurPractice/Arteaga'));
 const Asrani = React.lazy(() => import('./pages/Home/OurPractice/Asrani'));
 const Donnelley = React.lazy(() => import('./pages/Home/OurPractice/Donnelley'));
@@ -25,8 +25,10 @@ const Yagerman = React.lazy(() => import('./pages/Home/OurPractice/Yagerman'));
 
 // Extra
 const CovidProtocols = React.lazy(() => import('./pages/Home/Services/CovidProtocols'));
+const MeetTheStaff = React.lazy(() => import('./pages/Home/OurPractice/MeetTheStaff'));
+const MeetThePhysicians = React.lazy(() => import('./pages/Home/OurPractice/MeetThePhysicians'));
 
-//Special
+// Special
 const PageComingSoon = React.lazy(() => import('./pages/Pages/Special/PageComingSoon'));
 const PageComingSoon2 = React.lazy(() => import('./pages/Pages/Special/page-comingsoon2'));
 const PageError = React.lazy(() => import('./pages/Pages/Special/PageError'));
@@ -123,7 +125,6 @@ const routes = [
     { path: '/devices-medical', component: DevicesMedical },
 
     // Physicians
-    { path: '/our-practice', component: OurPractice },
     { path: '/debbie-arteaga', component: Arteaga },
     { path: '/falguni-asrani', component: Asrani },
     { path: '/jack-cossman', component: Cossman },
@@ -131,19 +132,24 @@ const routes = [
     { path: '/lisa-travis', component: Travis },
     { path: '/sarah-yagerman', component: Yagerman },
 
+    // Our Practice
+    { path: '/about-us', component: AboutUs },
+    { path: '/meet-the-physicians', component: MeetThePhysicians },
+    { path: '/meet-the-staff', component: MeetTheStaff },
+
     // Extra
     { path: '/covid-protocols', component: CovidProtocols },
 
-    //Contct withour layout
+    // Contct withour layout
     { path: '/page-contact-detail', component: PageContactDetail, isWithoutLayout : true },
 
-    //Special Pages
+    // Special Pages
     { path: '/page-comingsoon', component: PageComingSoon, isWithoutLayout : true },
     { path: '/page-comingsoon2', component: PageComingSoon2, isWithoutLayout : true },
     { path: '/page-error', component: PageError, isWithoutLayout : true },
     { path: '/page-maintenance', component: PageMaintenance, isWithoutLayout : true },
 
-    //User Pages
+    // User Pages
     { path: '/page-login', component: PageLogin, isWithoutLayout : true },
     { path: '/page-signup', component: PageSignup, isWithoutLayout : true },
     { path: '/page-cover-login', component: PageCoverLogin, isWithoutLayout : true },

@@ -26,47 +26,41 @@ class Cossman extends React.Component {
       description: (
         <React.Fragment>
           <p>
-            Dr. Cossman is a board-certified dermatologist who practices
-            medical, cosmetic, and surgical dermatology. As a member of the
+            Dr. Jack Cossman is a board-certified dermatologist who practices
+            medical, cosmetic, and surgical dermatology. As a fellow of the
             American Academy of Dermatology, Dr. Cossman loves all aspects of
-            the specialty and welcomes patients of all ages and genders.
+            the specialty and welcomes patients of all ages. He has particular
+            interests in treating acne &amp; acne scarring, vitiligo, and
+            psoriasis, in addition to skin rejuvenation using chemical peels,
+            PRP, lasers, and injectables. Committed to the best care of
+            patients, he strives to offer the best combination of traditional
+            and modern treatment options for any patient's needs.
           </p>
           <p>
-            Originally from the Philadelphia area, he spent over a decade in New
-            England for his education and training. He attended both college and
-            medical school at Brown University. Among all clinical experiences,
+            Originally from Philadelphia, he spent over a decade in New England
+            for his education and training. He attended both college and medical
+            school at Brown University. Among all clinical experiences,
             dermatology was a perfect fit: combining many aspects of medicine
             and surgery, it also fulfilled his lifelong interests in the natural
-            and physical sciences, aesthetics, and human diversity.
-          </p>
-          <p>
-            After medical school, he completed his internship at Yale New Haven
+            and physical sciences, aesthetics, and human diversity. After
+            medical school, he completed his internship at Yale New Haven
             Hospital, and then returned to Providence for his dermatology
-            residency at Roger Williams Medical Center. Starting in medical
-            school and continuing through residency, he undertook various
-            research projects and earned several awards. He also completed
-            preceptorships in cosmetic and pediatric dermatology in Los Angeles
-            and New York.
+            residency at Roger Williams Medical Center.
           </p>
           <p>
-            As chief in his final year of residency, Dr. Cossman taught and
-            trained junior residents and medical students. Passionate for
-            dermatology and desiring to continue teaching, he is proudly on
-            staff at New York University’s Department of Dermatology, where he
-            teaches residents weekly.
+            In addition to seeing patients at Upper West Side Dermatology, Dr.
+            Cossman is also a clinical instructor for the residency program at
+            New York University’s Department of Dermatology in Bellevue
+            Hospital. With dedication to the science and practice of
+            dermatology, he also has extensive experience in clinical trials and
+            research.
           </p>
           <p>
-            Beyond enjoying living in New York, Dr. Cossman ever endeavors to
-            see and experience our amazing world. He has been to 34 countries
-            and 40 states and is on a quest to visit them all. Enjoying camping
-            and hiking, he is also aspiring to see all the National Parks,
-            having visited 30 so far. Big Bend National Park in Texas is his
-            favorite, although Great Sand Dunes in Colorado was spectacular,
-            too.
+            Outside of his professional life, Dr. Cossman and his chihuahua love
+            exploring our amazing world. He has been to 35 countries and 49
+            states (just missing Iowa), as well as 51 of the 63 U.S. National
+            Parks.
           </p>
-          <a href="https://qwell.com/dermatology/jack-cossman-md"
-            className="btn btn-primary mt-2 mr-1"
-            target="_blank">Make an appointment with Dr. Cossman</a>
         </React.Fragment>
       ),
       pathItems: [

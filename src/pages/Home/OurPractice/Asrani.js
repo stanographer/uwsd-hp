@@ -57,9 +57,6 @@ class Asrani extends React.Component {
             relationships with her patients, providing them with the highest
             level of care.
           </p>
-          <a href="https://qwell.com/dermatology/falguni-asrani-md"
-            className="btn btn-primary mt-2 mr-1"
-            target="_blank">Make an appointment with Dr. Asrani</a>
         </React.Fragment>
       ),
       pathItems: [

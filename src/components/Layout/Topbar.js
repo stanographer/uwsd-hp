@@ -58,6 +58,22 @@ class Topbar extends Component {
           id: 2,
           title: "Our Practice",
           link: "/our-practice",
+          isOpenSubMenu: false,
+          isMegaMenu: false,
+          child: [
+            {
+              title: "Meet The Physicians",
+              link: "/meet-the-physicians",
+            },
+            {
+              title: "Meet The Staff",
+              link: "/meet-the-staff",
+            },
+            {
+              title: "About Us",
+              link: "/about-us",
+            },
+          ],
         },
       ],
     };

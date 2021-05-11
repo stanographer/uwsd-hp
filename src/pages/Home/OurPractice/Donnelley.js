@@ -69,10 +69,6 @@ class Donnelley extends React.Component {
             2 dogs, and a cat. She enjoys travel, any activities involving
             water, fine dining and reading.
           </p>
-          <a href="https://qwell.com/dermatology/naomi-donnelly-md"
-            className="btn btn-primary mt-2 mr-1"
-            target="_blank">Make an appointment with Dr. Donnelley</a>
-          
         </React.Fragment>
       ),
       pathItems: [

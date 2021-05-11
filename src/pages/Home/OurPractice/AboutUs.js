@@ -40,116 +40,15 @@ import mastercard from "../../../images/payments/payment/master-card.jpg";
 import visa from "../../../images/payments/payment/visa.jpg";
 import amaricanExpress from "../../../images/payments/payment/american-express.jpg";
 
-class OurPractice extends Component {
+class AboutUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
       pathItems: [
         //id must required
         { id: 1, name: "Home", link: "/" },
-        { id: 3, name: "Our Practice", link: "/our-practice" },
-      ],
-      physicians: [
-        {
-          id: 1,
-          image: Travis,
-          imageTiny: TravisTiny,
-          name: "Dr. Lisa Travis",
-          designation: "Board-Certified Dermatologist",
-          link: "/lisa-travis",
-        },
-        {
-          id: 2,
-          image: Cossman,
-          imageTiny: CossmanTiny,
-          name: "Dr. Jack Cossman",
-          designation: "Board-Certified Dermatologist",
-          link: "/jack-cossman",
-        },
-        {
-          id: 3,
-          image: Asrani,
-          imageTiny: AsraniTiny,
-          name: "Dr. Falguni Asrani",
-          designation: "Board-Certified Dermatologist",
-          link: "/falguni-asrani",
-        },
-        {
-          id: 4,
-          image: Yagerman,
-          imageTiny: YagermanTiny,
-          name: "Dr. Sarah Yagerman",
-          designation: "Mohs Surgeon",
-          link: "/sarah-yagerman",
-        },
-        {
-          id: 5,
-          image: Donnelley,
-          imageTiny: DonnelleyTiny,
-          name: "Dr. Naomi Donnelley",
-          designation: "Board-Certified Dermatologist",
-          link: "/naomi-donnelley",
-        },
-      ],
-      assistants: [
-        {
-          id: 5,
-          image: Ouyang,
-          imageTiny: OuyangTiny,
-          name: "Janie Ouyang",
-          designation: "Medical Assistant Supervisor",
-          link: "/janie-ouyang",
-        },
-        {
-          id: 6,
-          image: Abid,
-          imageTiny: AbidTiny,
-          name: "Ammara Abid",
-          designation: "Senior Medical Assistant",
-          link: "/ammara-abid",
-        },
-        {
-          id: 7,
-          image: Bauer,
-          imageTiny: BauerTiny,
-          name: "Katie Bower",
-          designation: "Medical Assistant",
-          link: "/katie-bower",
-        },
-        {
-          id: 8,
-          image: Lauter,
-          imageTiny: LauterTiny,
-          name: "Mia Lauter",
-          designation: "Medical Assistant",
-          link: "/mia-lauter",
-        },
-        {
-          id: 9,
-          image: Arteaga,
-          imageTiny: ArteagaTiny,
-          name: "Debbie Arteaga",
-          designation: "Medical and Cosmetic Aesthetician",
-          link: "/debbie-arteaga",
-        },
-      ],
-      admin: [
-        {
-          id: 10,
-          image: Gonzalez,
-          imageTiny: GonzalezTiny,
-          name: "Karla Gonzalez",
-          designation: "Office Manager",
-          link: "/karla-gonzalez",
-        },
-        {
-          id: 11,
-          image: Soriano,
-          imageTiny: SorianoTiny,
-          name: "Jeannette Soriano",
-          designation: "Patient Care Coordinator",
-          link: "/jeannette-soriano",
-        },
+        { id: 2, name: "Our Practice", link: "/our-practice" },
+        { id: 3, name: "About Us", link: "/about-us" },
       ],
       paymentMethods: [
         { method_id: 1, title: "Discover", id: "discover", icon: discover },
@@ -197,31 +96,8 @@ class OurPractice extends Component {
           pathItems={pathItems}
         />
 
-        <section className="section" id="physicians">
+        <section className="section bg-light" id="patient-information" style={{position: 'unset'}}>
           <Container>
-            {/* Render Section Title */}
-            <SectionTitle
-              title="World-Class Care"
-              desc="Our team of board-certified dermatologists and specialists are experienced with both the fundamental and latest treatments in medical, pediatric, surgical, and cosmetic dermatology. Each dermatologist contributes unique skills, and we collaborate to deliver comprehensive and individualized care to every patient."
-              isLeft={false}
-            />
-            <Row>
-              <TeamBox candidates={this.state.physicians} />
-            </Row>
-            <hr />
-            <Row>
-              <TeamBox candidates={this.state.assistants} />
-            </Row>
-            <hr />
-            <Row>
-              <TeamBox candidates={this.state.admin} />
-            </Row>
-          </Container>
-        </section>
-
-        <section className="section bg-light" id="patient-information">
-          <Container>
-            {/* Render Section Title */}
             <SectionTitle
               title="Patient Information"
               isLeft={false}
@@ -584,4 +460,4 @@ class OurPractice extends Component {
     );
   }
 }
-export default OurPractice;
+export default AboutUs;
