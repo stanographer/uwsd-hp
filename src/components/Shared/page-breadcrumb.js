@@ -32,7 +32,6 @@ class PageBreadcrumb extends Component {
                       {this.props.title ? (
                         <h2 className="title">
                           {this.props.title}
-                          <span className="text-primary">.</span>
                         </h2>
                       ) : null}
                       

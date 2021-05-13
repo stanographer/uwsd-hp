@@ -92,11 +92,6 @@ class Index extends Component {
                 <div className="ml-lg-4 mb-3">
                   <h4 className="mb-4">About {title}</h4>
                   <div className="mb-5 text-muted">{description}</div>
-                  <div className="mt-4">
-                    <Link to="/page-job-apply" className="btn btn-primary">
-                      Contact Us Today
-                    </Link>
-                  </div>
                   <div className="mt-5">{additionalInfo}</div>
                 </div>
               </Col>

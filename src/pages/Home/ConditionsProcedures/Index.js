@@ -103,9 +103,6 @@ class Index extends Component {
                       </ul>
                       </section>
                     )}
-                    <Link to="/page-job-apply" className="btn btn-primary">
-                      Contact Us Today
-                    </Link>
                   </div>
                   <div className="mt-5">{additionalInfo}</div>
                 </div>

@@ -1,13 +1,11 @@
 // React Basic and Bootstrap
 
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 // Import Components
-import SectionTitle from "../../../components/Shared/section-title";
 import PageBreadcrumb from "../../../components/Shared/page-breadcrumb";
 
 const LazyImage = ({ image, scrollPosition }) => (

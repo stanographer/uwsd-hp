@@ -134,7 +134,7 @@ class MohsSurgery extends React.Component {
               <p>
                 To get a better picture of how this process takes place, please
                 view our guide,{" "}
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=F6TxdvjPk5I">
                   <strong>The Mohs Step-by-Step Process</strong>
                 </a>
                 .
