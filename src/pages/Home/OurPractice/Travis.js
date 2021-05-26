@@ -61,7 +61,7 @@ class Travis extends React.Component {
             “Medicine is a process in which we need to work together with the
             patient to provide the best care,” she says. In her free time, Dr.
             Travis loves to travel and spend time with her husband, three kids,
-            and their adorable Labradoodle puppy, Hudson.
+            and their adorable Labradoodle puppy, Hudson. 
           </p>
         </React.Fragment>
       ),
