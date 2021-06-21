@@ -25,7 +25,7 @@ class Soriano extends React.Component {
       imageTiny,
       description: (
         <React.Fragment>
-          <p></p>
+          <p></p> 
         </React.Fragment>
       ),
       pathItems: [
